@@ -4,11 +4,6 @@ import Home from './views/Home.vue';
 
 Vue.use(Router);
 
-// Lazy load everything but home page!
-const about = () => import('./views/About.vue');
-const contact = () => import('./views/Contact.vue');
-const services = () => import('./views/Services.vue');
-
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
@@ -25,6 +20,16 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+    },
+    {
+      path: '/services',
+      name: 'services',
+      component: () => import(/* webpackChunkName: "services" */ './views/Services.vue'),
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import(/* webpackChunkName: "contact" */ './views/Contact.vue'),
     },
   ],
 });
