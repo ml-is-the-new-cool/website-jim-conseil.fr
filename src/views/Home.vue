@@ -1,6 +1,7 @@
 <template>
-  <div class="home">
+  <div class="animated fadeIn">
     home
+<font-awesome-icon icon="linkedin" />
   </div>
 </template>
 

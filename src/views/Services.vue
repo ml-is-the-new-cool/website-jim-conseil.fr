@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="animated fadeIn">
     services
   </div>
 </template>

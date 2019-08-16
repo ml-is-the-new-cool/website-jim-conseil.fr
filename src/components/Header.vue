@@ -2,10 +2,7 @@
   <b-navbar class="is-black">
     <template slot="brand">
       <b-navbar-item tag="router-link" to="/">
-        <img
-          :src="logoImage"
-          alt="Junior Informatique Marseille"
-        >
+        <img :src="logoImage" alt="Junior Informatique Marseille"/>
       </b-navbar-item>
     </template>
     <template slot="end">
