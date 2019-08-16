@@ -1,5 +1,5 @@
 {
-  "name": "jim_website",
+  "name": "jim-conseil.fr",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,11 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.21",
-    "@fortawesome/free-solid-svg-icons": "^5.10.1",
-    "@fortawesome/vue-fontawesome": "^0.1.6",
-    "buefy": "^0.8.2",
     "core-js": "^2.6.5",
+    "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
@@ -20,8 +17,8 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.10.0",
     "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-plugin-pwa": "^3.10.0",
     "@vue/cli-service": "^3.10.0",
-    "@vue/eslint-config-airbnb": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",

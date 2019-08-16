@@ -1,4 +1,4 @@
-# Junior Informatique Marseille website
+# jim-conseil.fr
 
 ## Project setup
 ```
