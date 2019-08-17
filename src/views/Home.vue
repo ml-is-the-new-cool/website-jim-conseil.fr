@@ -7,7 +7,7 @@
       </div>
 
       <!-- Animated particles -->
-      <div id="particles-js"></div>
+      <!-- https://vue-particles.netlify.com -->
 
       <!-- Hero Image and Title -->
       <div class="hero-body">

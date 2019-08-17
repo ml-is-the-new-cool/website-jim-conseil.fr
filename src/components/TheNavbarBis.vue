@@ -1,28 +1,26 @@
 <template>
-  <!-- Static navbar -->
-  <nav class="navbar is-light">
+  <!-- Cloned navbar that comes in on scroll -->
+  <nav id="navbar-clone" class="navbar is-fixed is-dark">
     <div class="container">
       <!-- Brand -->
       <div class="navbar-brand">
-        <router-link to="/services" class="navbar-item">
-          <img class="rotating" :src="logoImage" alt="">
-          <span class="brand-name">JIM Conseil</span>
-        </router-link>
+        <a href="index.html" class="navbar-item">
+          <img class="rotating" src="assets/images/logo/krypton-gradient.svg" alt="">
+          <span class="brand-name">Krypton</span>
+        </a>
         <!-- Responsive toggle -->
-        <span class="navbar-burger burger" data-target="navbarMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
+        <span class="navbar-burger burger" data-target="cloneNavbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
       </div>
       <!-- Menu -->
-      <div id="navbarMenu" class="navbar-menu">
+      <div id="cloneNavbarMenu" class="navbar-menu">
         <div class="navbar-end">
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
-            <router-link to="/home" class="is-centered-responsive">
-              Services
-            </router-link>
+            <a class="is-centered-responsive" href="token.html">Token</a>
           </div>
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
@@ -44,7 +42,7 @@
             </a>
           </div>
           <!-- Sign up -->
-          <div class="navbar-item">
+          <div class="navbar-item is-nav-link">
             <a href="#" class="button k-button k-primary raised has-gradient slanted">
               <span class="text">Register</span>
               <span class="front-gradient"></span>
@@ -54,17 +52,5 @@
       </div>
     </div>
   </nav>
-  <!-- /Static navbar -->
+  <!-- /Cloned navbar -->
 </template>
-
-<script>
-  import logoImage from '../assets/images/logo/krypton.svg'
-
-  export default {
-    data() {
-      return {
-        logoImage
-      }
-    }
-  }
-</script>

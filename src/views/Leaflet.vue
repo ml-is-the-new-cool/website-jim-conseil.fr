@@ -4,8 +4,7 @@
     <section class="hero is-fullheight is-transparent">
       <div class="hero-head">
         <the-navbar></the-navbar>
-        About
-        {{ $t('links.linkedin') }}
+        Leaflet
       </div>
     </section>
     <!-- Contact section -->
