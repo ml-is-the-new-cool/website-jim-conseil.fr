@@ -102,14 +102,17 @@ $(document).ready(function($){
 
     function updateTimelinePosition(string, event, timelineComponents, timelineTotWidth) {
         //translate timeline to the left/right according to the position of the selected event
-        var eventStyle = window.getComputedStyle(event.get(0), null),
-            eventLeft = Number(eventStyle.getPropertyValue("left").replace('px', '')),
-            timelineWidth = Number(timelineComponents['timelineWrapper'].css('width').replace('px', '')),
-            timelineTotWidth = Number(timelineComponents['eventsWrapper'].css('width').replace('px', ''));
-        var timelineTranslate = getTranslateValue(timelineComponents['eventsWrapper']);
+        let eventStyle = window.getComputedStyle(event.get(0), null);
+        let eventLeft = Number(eventStyle.getPropertyValue("left").replace('px', ''));
+        let timelineWidth = Number(timelineComponents['timelineWrapper'].css('width').replace('px', ''));
+        timelineTotWidth = Number(timelineComponents['eventsWrapper'].css('width').replace('px', ''));
+        let timelineTranslate = getTranslateValue(timelineComponents['eventsWrapper']);
 
-        if( (string == 'next' && eventLeft > timelineWidth - timelineTranslate) || (string == 'prev' && eventLeft < - timelineTranslate) ) {
-            translateTimeline(timelineComponents, - eventLeft + timelineWidth/2, timelineWidth - timelineTotWidth);
+        if( (string === 'next' && eventLeft > timelineWidth - timelineTranslate) ||
+            (string === 'prev' && eventLeft < - timelineTranslate) ) {
+            translateTimeline(timelineComponents,
+              - eventLeft + timelineWidth/2,
+              timelineWidth - timelineTotWidth);
         }
     }
 
@@ -143,10 +146,9 @@ $(document).ready(function($){
     }
 
     function setTimelineWidth(timelineComponents, width) {
-        var timeSpan = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][timelineComponents['timelineDates'].length-1]),
-            timeSpanNorm = timeSpan/timelineComponents['eventsMinLapse'],
-            timeSpanNorm = Math.round(timeSpanNorm) + 4,
-            totalWidth = timeSpanNorm*width;
+        let timeSpan = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][timelineComponents['timelineDates'].length-1]);
+        let timeSpanNorm = Math.round(timeSpan/timelineComponents['eventsMinLapse']) + 4;
+        let totalWidth = timeSpanNorm*width;
         timelineComponents['eventsWrapper'].css('width', totalWidth+'px');
         updateFilling(timelineComponents['timelineEvents'].eq(0), timelineComponents['fillingLine'], totalWidth);
 
@@ -159,12 +161,13 @@ $(document).ready(function($){
             selectedContent = eventsContent.find('[data-date="'+ eventDate +'"]'),
             selectedContentHeight = selectedContent.height();
 
+        let classEnetering, classLeaving;
         if (selectedContent.index() > visibleContent.index()) {
-            var classEnetering = 'selected enter-right',
-                classLeaving = 'leave-left';
+            classEnetering = 'selected enter-right';
+            classLeaving = 'leave-left';
         } else {
-            var classEnetering = 'selected enter-left',
-                classLeaving = 'leave-right';
+            classEnetering = 'selected enter-left';
+            classLeaving = 'leave-right';
         }
 
         selectedContent.attr('class', classEnetering);
@@ -187,13 +190,14 @@ $(document).ready(function($){
             timelineStyle.getPropertyValue("-o-transform") ||
             timelineStyle.getPropertyValue("transform");
 
+        let translateValue;
         if( timelineTranslate.indexOf('(') >=0 ) {
-            var timelineTranslate = timelineTranslate.split('(')[1];
+            timelineTranslate = timelineTranslate.split('(')[1];
             timelineTranslate = timelineTranslate.split(')')[0];
             timelineTranslate = timelineTranslate.split(',');
-            var translateValue = timelineTranslate[4];
+            translateValue = timelineTranslate[4];
         } else {
-            var translateValue = 0;
+            translateValue = 0;
         }
 
         return Number(translateValue);
@@ -213,27 +217,6 @@ $(document).ready(function($){
         events.each(function(){
             var dateComp = $(this).data('date').split('/'),
                 newDate = new Date(dateComp[2], dateComp[1]-1, dateComp[0]);
-            dateArrays.push(newDate);
-        });
-        return dateArrays;
-    }
-
-    function parseDate2(events) {
-        var dateArrays = [];
-        events.each(function(){
-            var singleDate = $(this),
-                dateComp = singleDate.data('date').split('T');
-            if( dateComp.length > 1 ) { //both DD/MM/YEAR and time are provided
-                var dayComp = dateComp[0].split('/'),
-                    timeComp = dateComp[1].split(':');
-            } else if( dateComp[0].indexOf(':') >=0 ) { //only time is provide
-                var dayComp = ["2000", "0", "0"],
-                    timeComp = dateComp[0].split(':');
-            } else { //only DD/MM/YEAR
-                var dayComp = dateComp[0].split('/'),
-                    timeComp = ["0", "0"];
-            }
-            var	newDate = new Date(dayComp[2], dayComp[1]-1, dayComp[0], timeComp[0], timeComp[1]);
             dateArrays.push(newDate);
         });
         return dateArrays;
