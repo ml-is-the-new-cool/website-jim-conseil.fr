@@ -4,7 +4,8 @@
     <div class="container">
       <!-- Brand -->
       <div class="navbar-brand">
-        <router-link to="/services" class="navbar-item">
+        <router-link :to="$i18nRoute({ name: 'home' })"
+                     class="navbar-item">
           <img class="rotating" :src="logoImage" alt="">
           <span class="brand-name">JIM Conseil</span>
         </router-link>
@@ -58,7 +59,7 @@
 </template>
 
 <script>
-  import logoImage from '../assets/images/logo/krypton.svg'
+  import logoImage from '@/assets/images/logo/krypton.svg'
 
   export default {
     data() {

@@ -1406,10 +1406,10 @@
 </template>
 
 <script>
-import TheNavbar from '../components/TheNavbar.vue';
+import TheNavbar from '@/components/TheNavbar.vue';
 
 export default {
-  name: 'index',
+  name: 'home',
   components: {
     TheNavbar
   }

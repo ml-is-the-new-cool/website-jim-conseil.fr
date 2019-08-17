@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <the-page-loader/>
-    <router-view/>
+    <the-root/>
     <the-footer/>
   </div>
 </template>
 
 <script>
-  import ThePageLoader from './components/ThePageLoader.vue';
-  import TheFooter from './components/TheFooter.vue';
+import TheRoot from './components/TheRoot.vue';
+import ThePageLoader from './components/ThePageLoader.vue';
+import TheFooter from './components/TheFooter.vue';
 
-  export default {
-    components: {
-      ThePageLoader,
-      TheFooter
-    }
+export default {
+  name: 'app',
+  components: {
+    ThePageLoader,
+    TheFooter,
+    TheRoot
   }
+}
 </script>
