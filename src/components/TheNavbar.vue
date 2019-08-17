@@ -10,17 +10,19 @@
         </router-link>
         <!-- Responsive toggle -->
         <span class="navbar-burger burger" data-target="navbarMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
       </div>
       <!-- Menu -->
-      <div id="navbarMenu" class="navbar-menu light-menu">
+      <div id="navbarMenu" class="navbar-menu">
         <div class="navbar-end">
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
-            <a class="is-centered-responsive" href="token.html">Token</a>
+            <router-link to="/services" class="is-centered-responsive">
+              Services
+            </router-link>
           </div>
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">

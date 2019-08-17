@@ -1,0 +1,216 @@
+{
+  "presentation": {
+    "title": "Présentation de la JIM",
+    "content": "JIM - pour Junior Informatique Marseille - est la Junior-Entreprise informatique de l’université d’Aix-Marseille. Nous offrons aux entreprises un large panel de services correspondant aux compétences et savoir-faire des élèves. Les missions que vous nous confiez sont proposées par l’équipe stratégique de l’association aux élèves de la formation. Notre parcours spécialisé en informatique nous permet de réaliser la solution la plus fidèle à vos exigences : ingénierie du logiciel (site internet, application de bureau ou mobile), sécurité informatique, base de données, nettoyage des données, modélisation et animations 3D, intelligence artificielle et apprentissage automatique, étude de marché et de faisabilité pour un projet informatique, traduction de documents techniques pointus en anglais."
+  },
+  "why_us": {
+    "title": "Pourquoi choisir JIM ?",
+    "content": "Spécialisés dans l'informatique en suivant la formation d'Aix-Marseille Université, nos membres sont de plus experts dans les principaux domaines d'activités qui lui sont liés. En fonction de votre besoin, les membres permanents de l'association vous propose l'équipe la plus adaptée ne font pas partie d'un site en particulier mais de différents sites d'Aix-Marseille Université pour un plus large choix de spécialités et d'étudiants."
+  },
+  "key_numbers": {
+    "title": "Quelques chiffres...",
+    "content": [
+      {
+        "title": "Membres permanents",
+        "count": 5
+      },
+      {
+        "title": "Étudiants-ingénieurs",
+        "count": 650
+      },
+      {
+        "title": "Enseignants-chercheurs",
+        "count": 84
+      },
+      {
+        "title": "Pôles de recherche",
+        "count": 4
+      }
+    ]
+  },
+  "methodology": {
+    "title": "Notre méthodologie",
+    "content": [
+      {
+        "step": 1,
+        "name": "Prise de contact",
+        "text": "Un Junior Consultant membre du pôle stratégique vous rappelle sous 24h pour comprendre vos problématiques, vos attentes et vos impératifs. La prise de contact peut être physique, téléphonique ou par visioconférence."
+      },
+      {
+        "step": 2,
+        "name": "Avant-projet",
+        "text": "Nous formons l’équipe de Junior Consultants la plus pertinente pour votre projet. Sous 5 jours ouvrés, nous vous présentons l’équipe projet, la méthodologie employée, les délais et le budget adapté à votre demande."
+      },
+      {
+        "step": 3,
+        "name": "Phase terrain",
+        "text": "Tout au long du projet, l’équipe projet et un responsable stratégique vous accompagne afin de maintenir vos objectifs au centre de nos réalisations."
+      },
+      {
+        "step": 4,
+        "name": "Remise et déploiement du livrable",
+        "text": "Nous vous présentons les résultats finaux et élaborons avec vous une stratégie de suivi après-projet."
+      }
+    ]
+  },
+  "team": {
+    "title": "Notre équipe",
+    "content": [
+      {
+        "name": "Hippolyte L. DEBERNARDI",
+        "function": "Président",
+        "image": "debernardi.png",
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/hippolyte-debernardi",
+          "website": "..."
+        }
+      },
+      {
+        "name": "Toni GARCIA",
+        "function": "Trésorier",
+        "image": "garcia.png",
+        "links": {
+          "linkedin": "...",
+          "website": "..."
+        }
+      },
+      {
+        "name": "Rachel GLAISE",
+        "function": "Secrétaire générale",
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/rachel-glaise-30352a123/",
+          "website": "..."
+        }
+      },
+      {
+        "name": "Théo FRASSI",
+        "function": "Vice-trésorier",
+        "image": "frassi.png",
+        "links": {
+          "linkedin": "https://www.linkedin.com/in/theo-frassi",
+          "website": ""
+        }
+      },
+      {
+        "name": "Théau RIFFAUT",
+        "function": "Secrétaire adjoint",
+        "image": "riffaut.png",
+        "links": {
+          "linkedin": "www.linkedin.com/in/theau-riffaut",
+          "website": "..."
+        }
+      },
+      {
+        "name": "Lin ZHANG-CYR",
+        "function": "Vice-Trésorière",
+        "image": "zhang.png",
+        "links": {
+          "linkedin": "...",
+          "website": "..."
+        }
+      }
+    ]
+  },
+  "links": {
+    "address": [
+      "163, avenue de Luminy ",
+      "13009 Marseille 9 ",
+      "UFR Sciences"
+    ],
+    "map_key": "AIzaSyBxLLLi7r2xpETgcvwMSXsuU7WyTsOFk7Y",
+    "map_lat": "43.2325728",
+    "map_lng": "5.438553",
+    "linkedin": "https://www.linkedin.com/in/...",
+    "twitter": "https://www.twitter.com/...",
+    "facebook": "https://www.facebook.com/...",
+    "mail": "contact@jim-conseil.fr",
+    "siren": "851 985 846"
+  },
+  "problematic": {
+    "title": "Votre problématique",
+    "content": [
+      {
+        "title": "Données",
+        "text": "Les élèves ingénieurs en génie logiciel ainsi que ceux en intelligence artificielle et apprentissage automatique vous garantissent des résultats à la hauteur de vos attentes en utilisant des outils reconnus - SQL, Python, Talent. Nous étudions l'algèbre relationnelle tout au long de nos études : vous utilisez déjà un autre outil ? Nous nous adaptons.",
+        "objectives": "Améliorer la qualité de vos données afin d'augmenter votre efficacité en matière de prise de décision, de votre gestion relation client ou encore de votre maîtrise du risque.",
+        "projects": "Optimiser la distribution d'un produit commercial.",
+        "keywords": "Intelligence artificielle, Big Data, Intégration des données, Génie logiciel."
+      },
+      {
+        "title": "Traitement automatique du langage naturel",
+        "text": "Nous créons pour vous les outils les plus pertinents : traduction automatique ciblée, reconnaissance d’entités, synthèse automatique de texte, reconnaissance automatique de la parole, etc.",
+        "objectives": "Réduire votre temps de traitement d’une information relevant du langage naturel.",
+        "projects": [
+          "Chatbox, voicebox",
+          "Traduction ciblée",
+          "Proposition automatique de catégories",
+          "Ontolongie pour un hôpital"
+        ],
+        "keywords": "Intelligence artificielle, traduction automatique, synthèse automatique de texte, reconnaissance automatique de la parole."
+      },
+      {
+        "title": "Sécurité infrastructure et logiciel",
+        "text": "Les élèves ingénieurs en sécurité informatique suivent un parcours labellisé SecNumedu délivré par l’ANSSI qui vous garantissent la fiabilité de vos services.",
+        "objectives": "Accroître votre confiance en vos infrastructures et logiciels.",
+        "projects": [
+          "Installation d’un proxy, développement d’une architecture JEE.",
+          "Tests d'intrusion",
+          "Sécurisation d'un serveur ou d'un logiciel",
+          "Preuves de programme",
+          "Failles, méthodologie de tests"
+        ],
+        "keywords": "Sécurité réseau, architecture JEE, failles informatiques, preuves de programme, méthodologie de tests, tests d’intrusion."
+      },
+      {
+        "title": "Applications & Logiciels",
+        "text": "Vous avez une idée, un concept, un process à développer ? Parlons-en ensemble, nous vous proposons tout type de solution technique : module pour un logiciel existant, architecture orientée données (Cloud, SOA, Business process), conception et réalisation d'applications, exploiter les données hétérogènes et multi-sources. Big Data, XML, NoSQL",
+        "objectives": "Concrétisez vos idées & concepts par une solution informatique.",
+        "projects": [
+          "Logiciel de gestion interne à votre entreprise",
+          "Logiciel commercial",
+          "Module pour votre logiciel déjà existant"
+        ],
+        "keywords": "Développement, communication technique"
+      },
+      {
+        "title": "Développement WEB",
+        "text": "Création de site WEB aussi bien vitrine que commercial et aide pour le référencement sur les moteurs de recherche.",
+        "objectives": "Permettre une meilleure visibilité pour votre entreprise ou votre association.",
+        "projects": [
+          "Réalisation d'un site web responsive",
+          "Réalisation d'un site web sur le modèle applicatif (SPA)",
+          "Publicité & référencement"
+        ],
+        "keywords": "Visibilité, start-up, publicité"
+      },
+      {
+        "title": "Informatisation d'une association ou entreprise",
+        "text": "Mises à jour, Installation & réinstallation de système d'exploitation. Gestion matérielle",
+        "objectives": "TODO",
+        "projects": "TODO",
+        "keywords": "TODO"
+      },
+      {
+        "title": "Optimisation & implémentation d'un algorithme connu",
+        "text": "Parallélisation d'un algorithme. Algorithme à performances garanties",
+        "objectives": "TODO",
+        "projects": "TODO",
+        "keywords": "TODO"
+      },
+      {
+        "title": "Opérations sur maillage 3D",
+        "text": "Nous étudions les méthodes d'analyses existantes et proposons nos propres solutions en fonction de vos besoins afin d'obtenir les resultats que vous attendez.",
+        "objectives": "Appliquer des algorithmes et des calculs sur des maillages 3D afin d'extraire des informations pertinentes ou améliorer la structure du maillage pour optimiser les résultats.",
+        "projects": "Segmentation de maillage, Calcul de distance géodésique, Analyse de courbure, Décimation, Retriangulisation ...",
+        "keywords": "Maillage, 3D, OpenMesh, Algorithme, Triangle, Point, Face, Calcul"
+      },
+      {
+        "title": "Génération de maillage 3D",
+        "text": "Nous analysons vos besoins et nous créons le resultat que vous attendiez, que ce soit de la génération automatique de terrain ou de la voxelisation de maillage ou tout autres formes de création liées aux maillages 3D.",
+        "objectives": "Créer des maillages 3D de toute pièce ou non, selon la demande éffectuée, ou animer ces derniers.",
+        "projects": "Voxelisation d'un maillage, Modélisation d'une forme 3D sous forme de maillage, Animation d'un maillage, Génération automatique de forme 3D ...",
+        "keywords": "Maillage, 3D, OpenMesh, Algorithme, Triangle, Point, Face, Calcul, Animation, Création, Modélisation"
+      }
+    ]
+  }
+}

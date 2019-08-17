@@ -90,7 +90,7 @@ $(document).ready(function() {
     $(this).closest('.dropdown').addClass('is-active');
   })
   //Close pop dropdowns on click outside
-  $(window).on('click', function(event) {
+  $(window).on('click', function() {
     //if(!$(event.target).find('.dropdown-menu').length) {
     if($('.dropdown').hasClass('is-active')) {
       $('.dropdown').removeClass('is-active');
