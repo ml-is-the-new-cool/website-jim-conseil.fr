@@ -1,5 +1,5 @@
 import { Trans } from '@/plugins/Translation'
-import TheRoot from '@/components/TheRoot.vue'
+import TheContent from '@/components/TheContent.vue'
 
 function load (component) {
   console.log('you asked for', component);
@@ -9,11 +9,15 @@ function load (component) {
 export default [
   {
     path: '/:lang',
-    component: TheRoot,
+    component: TheContent,
     beforeEnter: Trans.routeMiddleware,
     children: [
       {
         path: '',
+        redirect: 'home'
+      },
+      {
+        path: 'home',
         name: 'home',
         component: load('Home'),
         meta: {
@@ -60,14 +64,6 @@ export default [
           title: 'Leaflet | JIM Conseil'
         }
       },
-      {
-        path: '*',
-        name: '404',
-        component: load('404'),
-        meta: {
-          title: '404 - Not Found | JIM Conseil'
-        }
-      }
     ]
   },
   {

@@ -4,8 +4,8 @@
     <section class="hero is-fullheight is-transparent">
       <div class="hero-head">
         <the-navbar></the-navbar>
-        Methodology
       </div>
+      Methodology
     </section>
     <!-- Contact section -->
   </div>
@@ -15,7 +15,7 @@
 import TheNavbar from '../components/TheNavbar.vue';
 
 export default {
-  name: 'index',
+  name: 'methodology',
   components: {
     TheNavbar
   }

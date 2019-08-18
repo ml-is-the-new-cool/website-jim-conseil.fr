@@ -3,16 +3,11 @@ import App from './App.vue'
 import router from './router'
 import { i18n } from './plugins/i18n';
 import { Trans } from './plugins/Translation'
-// spa support
-import './plugins/registerServiceWorker'
-// bulma css framework
-import Bulma from 'bulma'
-// Animate On Scroll library => https://michalsnik.github.io/aos/
-import AOS from 'aos'
+import './plugins/registerServiceWorker'      // spa support
+import Bulma from 'bulma'                     // bulma css framework
+import AOS from 'aos'                         // https://michalsnik.github.io/aos/
 import 'aos/dist/aos.css'
-// css and js scripts
-import './assets/scss/core.scss'
-import './assets/js/main.js'
+import './assets/styles/core.scss'              // css and js scripts
 
 Vue.use(Bulma);
 Vue.prototype.$i18nRoute = Trans.i18nRoute.bind(Trans);
@@ -22,8 +17,7 @@ new Vue({
   created() {
     AOS.init()
   },
-  el: '#app',
   router,
   i18n,
   render: h => h(App)
-});
+}).$mount('#app');

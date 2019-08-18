@@ -4,8 +4,8 @@
     <section class="hero is-fullheight is-transparent">
       <div class="hero-head">
         <the-navbar></the-navbar>
-        Leaflet
       </div>
+      Leaflet
     </section>
     <!-- Contact section -->
   </div>
@@ -13,11 +13,13 @@
 
 <script>
 import TheNavbar from '../components/TheNavbar.vue';
+//import TheNavbarBis from '../components/TheNavbarBis.vue';
 
 export default {
-  name: 'index',
+  name: 'leaflet',
   components: {
-    TheNavbar
+    TheNavbar,
+    //TheNavbarBis
   }
 }
 </script>

@@ -5,15 +5,15 @@
       <!-- Brand -->
       <div class="navbar-brand">
         <a href="index.html" class="navbar-item">
-          <img class="rotating" src="assets/images/logo/krypton-gradient.svg" alt="">
+          <img class="rotating" :src="logoImage" alt="">
           <span class="brand-name">Krypton</span>
         </a>
         <!-- Responsive toggle -->
         <span class="navbar-burger burger" data-target="cloneNavbarMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
       </div>
       <!-- Menu -->
       <div id="cloneNavbarMenu" class="navbar-menu">
@@ -54,3 +54,51 @@
   </nav>
   <!-- /Cloned navbar -->
 </template>
+
+<script>
+  import logoImage from '@/assets/images/logo/krypton.svg'
+  import $ from 'jquery'
+
+  export default {
+    data() {
+      return {
+        logoImage
+      }
+    }
+  }
+
+  $(document).ready(function() {
+    "use strict";
+    //Navbar Clone
+    if ($('#navbar-clone').length) {
+      $(window).scroll(function () {    // this will work when your window scrolled.
+        let height = $(window).scrollTop();  //getting the scrolling height of window
+        if (height > 50) {
+          $("#navbar-clone").addClass('is-active');
+        } else {
+          $("#navbar-clone").removeClass('is-active');
+        }
+      });
+    }
+
+    //Mobile menu toggle
+    if ($('.navbar-burger').length) {
+      $('.navbar-burger').on("click", function () {
+
+        var menu_id = $(this).attr('data-target');
+        $(this).toggleClass('is-active');
+        $("#" + menu_id).toggleClass('is-active');
+        $('.navbar.is-light').toggleClass('is-dark-mobile')
+
+        if ($('.navbar-menu').hasClass('is-active')) {
+            $('.navbar-menu').removeClass('is-active');
+            $('.navbar').removeClass('is-dark-mobile');
+        } else {
+            $('.navbar-menu').addClass('is-active');
+            $('.navbar').addClass('is-dark-mobile');
+        }
+      });
+    }
+  });
+  console.log('[IN] navbar clone');
+</script>

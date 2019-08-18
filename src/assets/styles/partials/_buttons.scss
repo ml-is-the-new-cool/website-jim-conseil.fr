@@ -1,4 +1,4 @@
-/*! _buttons.scss | Krypton | Kit 1 | CSS Ninja */
+/*! _buttons.styles | Krypton | Kit 1 | CSS Ninja */
 
 /* ==========================================================================
 Button styles
@@ -200,7 +200,7 @@ TABLE OF CONTENTS
     &.btn-outlined {
         border-color: $primary;
         color: $primary !important;
-        background-color: transparent; 
+        background-color: transparent;
         &:hover {
             color: $white;
             background-color: $primary;
@@ -230,7 +230,7 @@ TABLE OF CONTENTS
     &.btn-outlined {
         border-color: $secondary;
         color: $secondary !important;
-        background-color: transparent; 
+        background-color: transparent;
         &:hover {
             color: $white !important;
             background-color: $secondary;

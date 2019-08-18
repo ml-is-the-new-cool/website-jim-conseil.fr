@@ -3,11 +3,9 @@
     <div class="container">
       <!-- Logo -->
       <div class="footer-logo">
-        <a href="#">
-          <img class="rotating" src="assets/images/logo/krypton-gradient.svg" alt="">
-          <div class="brand-name">Krypton</div>
-          <div class="brand-subtitle">Blockchain brought to another level</div>
-        </a>
+          <img class="rotating" :src="gradientImage" alt="">
+          <div class="brand-name">JIM Conseil</div>
+          <div class="brand-subtitle">Beaugossitude brought to another level</div>
       </div>
 
       <!-- Columns -->
@@ -27,6 +25,12 @@
               <a href="#">Roadmap</a>
             </li>
           </ul>
+          <p>fais voir bg</p>
+          <p>fais voir bg</p>
+          <p>fais voir bg</p>
+          <p>fais voir bg</p>
+          <p>fais voir bg</p>
+          <p>fais voir bg</p>
         </div>
         <!-- Newsletter -->
         <div class="column is-4">
@@ -58,27 +62,30 @@
               <a href="#">Telegram</a>
             </li>
           </ul>
+          <p>fais voir bg</p>
+          <p>fais voir bg</p>
+          <p>fais voir bg</p>
+          <p>fais voir bg</p>
+          <p>fais voir bg</p>
+          <p>fais voir bg</p>
         </div>
       </div>
       <!-- Copyright -->
-      <p class="k-copyright">© 2018 | Krypton. All Rights Reserved</p>
+      <p class="k-copyright">© 2019 | JIM Conseil. All Rights Reserved</p>
       <br>
       <!-- Made by -->
-      <p class="coded-by">Designed and Coded by <a href="https://cssninja.io" target="_blank">Css Ninja</a></p>
+      <p class="coded-by">Designed and Coded by Hippolyte L. Debernardi & Toni Garcia</p>
     </div>
-
-    <!-- Absolute image -->
-    <img class="solar-system" :src="logoImage" alt="">
   </footer>
 </template>
 
 <script>
-  import logoImage from '../assets/images/bg/solar.svg';
+  import gradientImage from '@/assets/images/logo/krypton-gradient.svg';
 
   export default {
     data() {
       return {
-        logoImage
+        gradientImage
       }
     }
   }

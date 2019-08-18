@@ -86,9 +86,6 @@
     </section>
 
     <section>
-      <div class="roadmap-end">
-        <img src="assets/images/illustrations/roadmap-end.svg" alt="">
-      </div>
 
       <div class="follow-us">
 
@@ -141,15 +138,16 @@
 </template>
 
 <script>
-  import TheNavbar from '../components/TheNavbar.vue';
-  import worldImage from '../assets/images/illustrations/world.svg';
-
-  import '../assets/js/roadmap.js'
+  import TheNavbar from '../components/TheNavbar.vue'
+  //import TheNavbarBis from '../components/TheNavbarBis.vue'
+  import worldImage from '../assets/images/illustrations/world.svg'
+  import $ from 'jquery'
 
   export default {
-    name: 'index',
+    name: 'services',
     components: {
       TheNavbar,
+      //TheNavbarBis
     },
 
     data() {
@@ -158,4 +156,36 @@
       }
     }
   }
+
+  $(document).ready(function(){
+    'use strict';
+
+    // define variables
+    let items = document.querySelectorAll(".main-timeline li");
+
+    // check if an element is in viewport
+    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+    function isElementInViewport(el) {
+      let rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function callbackFunc() {
+      for (let i = 0; i < items.length; i++) {
+        if (isElementInViewport(items[i])) {
+          items[i].classList.add("in-view");
+        }
+      }
+    }
+
+    // listen for events
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("resize", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
+  });
 </script>

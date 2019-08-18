@@ -1,4 +1,4 @@
-/*! _features.scss | Krypton | Kit 1 | CSS Ninja */
+/*! _features.styles | Krypton | Kit 1 | CSS Ninja */
 
 /* ==========================================================================
 Features elements styles
@@ -49,7 +49,7 @@ TABLE OF CONTENTS
         height: 24px;
         width: 24px;
         border-radius: 50%;
-        @include secondary-gradient-right(); 
+        @include secondary-gradient-right();
         animation: pulse 1.6s infinite;
         animation-duration: 2s;
         transform-origin: center center ;

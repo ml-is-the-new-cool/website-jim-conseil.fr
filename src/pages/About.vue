@@ -4,9 +4,9 @@
     <section class="hero is-fullheight is-transparent">
       <div class="hero-head">
         <the-navbar></the-navbar>
-        About
-        {{ $t('links.linkedin') }}
       </div>
+      About
+      {{ $t('links.linkedin') }}
     </section>
     <!-- Contact section -->
   </div>
@@ -14,11 +14,13 @@
 
 <script>
 import TheNavbar from '../components/TheNavbar.vue';
+//import TheNavbarBis from '../components/TheNavbarBis.vue';
 
 export default {
-  name: 'index',
+  name: 'about',
   components: {
-    TheNavbar
+    TheNavbar,
+    //TheNavbarBis
   }
 }
 </script>

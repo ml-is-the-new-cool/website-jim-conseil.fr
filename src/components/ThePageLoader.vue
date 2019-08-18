@@ -4,3 +4,28 @@
     <div class="infraloader is-active"></div>
   </div>
 </template>
+
+<script>
+  import $ from 'jquery'
+
+  $(document).ready(function() {
+    "use strict";
+    //Page loader
+    if ($('.pageloader').length) {
+      $('.pageloader').toggleClass('is-active');
+
+      $(window).on('load', function() {
+        let pageloaderTimeout = setTimeout( function() {
+          $('.pageloader').toggleClass('is-active');
+          $('.infraloader').toggleClass('is-active');
+          clearTimeout( pageloaderTimeout );
+        }, 500 );
+      })
+    }
+  });
+  console.log('[IN] page loader');
+
+  export default {
+    name: 'page-loader'
+  }
+</script>

@@ -4,8 +4,8 @@
     <section class="hero is-fullheight is-transparent">
       <div class="hero-head">
         <the-navbar></the-navbar>
-        404 not found
       </div>
+      404 not found
     </section>
     <!-- Contact section -->
   </div>
@@ -13,11 +13,13 @@
 
 <script>
 import TheNavbar from '../components/TheNavbar.vue';
+//import TheNavbarBis from '../components/TheNavbarBis.vue';
 
 export default {
-  name: 'index',
+  name: '404',
   components: {
-    TheNavbar
+    TheNavbar,
+    //TheNavbarBis
   }
 }
 </script>
