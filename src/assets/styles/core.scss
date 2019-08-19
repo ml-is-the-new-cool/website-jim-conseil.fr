@@ -15,6 +15,13 @@ TABLE OF CONTENTS
 0. CSS Imports
 ========================================================================== */
 
+@import "~bulma/sass/utilities/_all";
+
+$navbar-background-color: dark-blue !important;
+//$navbar-item: white !important;
+
+@import "~bulma";
+
 @import 'partials/theme-default';
 @import 'partials/colors';
 @import 'partials/layout';

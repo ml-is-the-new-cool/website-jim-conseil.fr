@@ -4,12 +4,11 @@ import router from './router'
 import { i18n } from './plugins/i18n';
 import { Trans } from './plugins/Translation'
 import './plugins/registerServiceWorker'      // spa support
-import Bulma from 'bulma'                     // bulma css framework
 import AOS from 'aos'                         // https://michalsnik.github.io/aos/
 import 'aos/dist/aos.css'
 import './assets/styles/core.scss'              // css and js scripts
 
-Vue.use(Bulma);
+//Vue.use(Bulma);
 Vue.prototype.$i18nRoute = Trans.i18nRoute.bind(Trans);
 Vue.config.productionTip = false;
 

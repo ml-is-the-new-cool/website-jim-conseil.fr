@@ -5,6 +5,7 @@
       <div class="hero-head">
         <the-navbar></the-navbar>
       </div>
+      <!--  -->
       <div class="hero-body has-text-centered">
         <div class="columns">
           <div class="column is-6 is-offset-3">
@@ -48,7 +49,6 @@
 <script>
   import TheNavbar from '@/components/TheNavbar.vue'
   import titleImage from '@/assets/images/illustrations/world.svg'
-  import $ from 'jquery'
 
   export default {
     name: 'methodology',
@@ -58,15 +58,12 @@
 
     data() {
       return {
-        titleImage,
-        items: [
-          { title: '1' },
-          { title: '2' }
-      ]
+        titleImage
       }
     }
   }
 
+  import $ from 'jquery'
   $(document).ready(function(){
     'use strict';
     // define variables

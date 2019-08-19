@@ -1,7 +1,7 @@
 <template>
   <!-- Static navbar -->
   <div class="hero-head">
-    <nav class="navbar is-light">
+    <nav class="navbar is-light is-transparent">
       <div class="container">
         <!-- Brand -->
         <div class="navbar-brand">

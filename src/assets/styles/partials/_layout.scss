@@ -110,9 +110,6 @@ body {
         }
         //Navbar items
         .navbar-item {
-            a {
-                color: #0f0330 !important;
-            }
             a.button {
                 font-family: 'Cabin', sans-serif;
                 text-transform: uppercase;
@@ -158,6 +155,9 @@ body {
                     width: 100%;
                 }
             }
+        }
+        &.is-transparent {
+            background: transparent !important;
         }
 
         //Fixed navbar modifier
