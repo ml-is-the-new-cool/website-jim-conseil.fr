@@ -96,6 +96,7 @@ const Trans = {
   routeMiddleware (to, from, next) {
     // Load async message files here
     const lang = to.params.lang;
+    document.title = to.meta.title;
     if (!Trans.isLangSupported(lang)) return next(Trans.getUserSupportedLang());
     return Trans.changeLanguage(lang).then(() => next())
   },
