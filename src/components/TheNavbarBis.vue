@@ -4,10 +4,11 @@
     <div class="container">
       <!-- Brand -->
       <div class="navbar-brand">
-        <a href="index.html" class="navbar-item">
-          <img class="rotating" :src="logoImage" alt="">
-          <span class="brand-name">Krypton</span>
-        </a>
+        <router-link :to="$i18nRoute({ name: 'home' })"
+                     class="navbar-item">
+          <img class="rotating" :src="logoImage" alt="JIM Conseil">
+          <span class="brand-name">JIM Conseil</span>
+        </router-link>
         <!-- Responsive toggle -->
         <span class="navbar-burger burger" data-target="cloneNavbarMenu">
           <span></span>
@@ -20,33 +21,39 @@
         <div class="navbar-end">
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
-            <a class="is-centered-responsive" href="token.html">Token</a>
+            <router-link :to="$i18nRoute({ name: 'services' })"
+                         class="is-centered-responsive">
+              Services
+            </router-link>
           </div>
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
-            <a class="is-centered-responsive" href="ico.html">Ico</a>
+            <router-link :to="$i18nRoute({ name: 'methodology' })"
+                         class="is-centered-responsive">
+              Methodology
+            </router-link>
           </div>
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
-            <a class="is-centered-responsive" href="roadmap.html">Roadmap</a>
+            <router-link :to="$i18nRoute({ name: 'about' })"
+                         class="is-centered-responsive">
+              About
+            </router-link>
           </div>
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
-            <a class="is-centered-responsive" href="blog.html">Media</a>
+            <router-link :to="$i18nRoute({ name: 'contact' })"
+                         class="is-centered-responsive">
+              Contact
+            </router-link>
           </div>
-          <!-- Menu item -->
-          <div class="navbar-item is-nav-link">
-            <a class="is-centered-responsive" href="#" target="_blank">
-              <img class="telegram" src="assets/images/logo/telegram.svg" alt="">
-              Telegram
-            </a>
-          </div>
-          <!-- Sign up -->
-          <div class="navbar-item is-nav-link">
-            <a href="#" class="button k-button k-primary raised has-gradient slanted">
-              <span class="text">Register</span>
+          <!-- Leaflet button -->
+          <div class="navbar-item">
+            <router-link :to="$i18nRoute({ name: 'leaflet' })"
+                         class="button k-button k-primary raised has-gradient slanted">
+              <span class="text">Leaflet</span>
               <span class="front-gradient"></span>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>
@@ -91,11 +98,11 @@
         $('.navbar.is-light').toggleClass('is-dark-mobile')
 
         if ($('.navbar-menu').hasClass('is-active')) {
-            $('.navbar-menu').removeClass('is-active');
-            $('.navbar').removeClass('is-dark-mobile');
+          $('.navbar-menu').removeClass('is-active');
+          $('.navbar').removeClass('is-dark-mobile');
         } else {
-            $('.navbar-menu').addClass('is-active');
-            $('.navbar').addClass('is-dark-mobile');
+          $('.navbar-menu').addClass('is-active');
+          $('.navbar').addClass('is-dark-mobile');
         }
       });
     }

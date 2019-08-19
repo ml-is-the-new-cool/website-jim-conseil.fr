@@ -11,8 +11,7 @@
             <span class="brand-name">JIM Conseil</span>
           </router-link>
           <!-- Responsive toggle -->
-          <span class="navbar-burger burger"
-                data-target="navbarMenu">
+          <span class="navbar-burger burger" data-target="navbarMenu">
             <span></span>
             <span></span>
             <span></span>
@@ -49,7 +48,7 @@
                 Contact
               </router-link>
             </div>
-            <!-- Sign up -->
+            <!-- Leaflet button -->
             <div class="navbar-item">
               <router-link :to="$i18nRoute({ name: 'leaflet' })"
                            class="button k-button k-primary raised has-gradient slanted">
