@@ -70,6 +70,12 @@ export default [
     ]
   },
   {
+    path: '',
+    redirect() {
+      return Trans.getUserSupportedLang()
+    }
+  },
+  {
     path: '*',
     redirect() {
       return Trans.getUserSupportedLang()
