@@ -96,14 +96,6 @@
         $(this).toggleClass('is-active');
         $("#" + menu_id).toggleClass('is-active');
         $('.navbar.is-light').toggleClass('is-dark-mobile')
-
-        if ($('.navbar-menu').hasClass('is-active')) {
-          $('.navbar-menu').removeClass('is-active');
-          $('.navbar').removeClass('is-dark-mobile');
-        } else {
-          $('.navbar-menu').addClass('is-active');
-          $('.navbar').addClass('is-dark-mobile');
-        }
       });
     }
   });

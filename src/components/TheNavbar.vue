@@ -11,14 +11,17 @@
             <span class="brand-name">JIM Conseil</span>
           </router-link>
           <!-- Responsive toggle -->
-          <span class="navbar-burger burger" data-target="navbarMenu">
+          <span @click="activateBurger"
+                  v-bind:class="{ 'is-active': isBurgerActive }"
+                  class="navbar-burger burger" data-target="navbarMenu">
             <span></span>
             <span></span>
             <span></span>
         </span>
         </div>
         <!-- Menu -->
-        <div id="navbarMenu" class="navbar-menu">
+        <div id="navbarMenu" class="navbar-menu"
+             v-bind:class="{'is-active' : isBurgerActive }">
           <div class="navbar-end">
             <!-- Menu item -->
             <div class="navbar-item is-nav-link">
@@ -66,62 +69,20 @@
 
 <script>
   import logoImage from '@/assets/images/logo/krypton.svg'
-  import $ from 'jquery'
 
   export default {
+    name: 'navbar',
     data() {
       return {
-        logoImage
+        logoImage,
+        isBurgerActive: false
+      }
+    },
+    methods: {
+      activateBurger() {
+        this.isBurgerActive = !this.isBurgerActive;
+        return this.isBurgerActive
       }
     }
   }
-
-  $(document).ready(function() {
-    "use strict";
-
-    //Mobile menu toggle
-    if ($('.navbar-burger').length) {
-      $('.navbar-burger').on("click", function () {
-
-        var menu_id = $(this).attr('data-target');
-        $(this).toggleClass('is-active');
-        $("#" + menu_id).toggleClass('is-active');
-        $('.navbar.is-light').toggleClass('is-dark-mobile')
-      });
-    }
-
-    //Highlight current page navbar menu item
-    if ($('.navbar').length) {
-      // Get current page URL
-      let url = window.location.href;
-
-      // remove # from URL
-      url = url.substring(0, (url.indexOf("#") === -1) ? url.length : url.indexOf("#"));
-
-      // remove parameters from URL
-      url = url.substring(0, (url.indexOf("?") === -1) ? url.length : url.indexOf("?"));
-
-      // select file name
-      url = url.substr(url.lastIndexOf("/") + 1);
-
-      // If file name not available
-      if(url === ''){
-        url = 'home';
-      }
-
-      // Loop all menu items
-      $('.navbar .navbar-item a').each(function(){
-        // select href
-        let href = $(this).attr('href');
-
-        // Check filename
-        if(url === href){
-          // Add active class
-          $(this).addClass('is-active');
-        }
-      });
-    }
-
-    console.log('[IN] thenavbar init')
-  });
 </script>

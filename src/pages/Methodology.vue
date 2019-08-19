@@ -4,6 +4,7 @@
     <section class="hero is-medium is-transparent">
       <div class="hero-head">
         <the-navbar></the-navbar>
+        <the-navbar-bis></the-navbar-bis>
       </div>
       <!--  -->
       <div class="hero-body has-text-centered">
@@ -48,12 +49,14 @@
 
 <script>
   import TheNavbar from '@/components/TheNavbar.vue'
+  import TheNavbarBis from '@/components/TheNavbarBis.vue'
   import titleImage from '@/assets/images/illustrations/world.svg'
 
   export default {
     name: 'methodology',
     components: {
       TheNavbar,
+      TheNavbarBis
     },
 
     data() {

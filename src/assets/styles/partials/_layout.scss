@@ -102,11 +102,9 @@ body {
                 letter-spacing: 3px;
             }
             //Removing navbar item default hover behaviour
-            &:hover {
                 .navbar-item {
                     background: transparent !important;
                 }
-            }
         }
         //Navbar items
         .navbar-item {
@@ -127,7 +125,7 @@ body {
                 }
             }
             a.is-active {
-                color: $secondary;
+                color: $secondary !important;
             }
         }
         //Color modifiers
@@ -136,8 +134,8 @@ body {
                 .brand-name {
                     color: $white;
                 }
-                .navbar-link::after {
-                    border-color: $white;
+                &.hover {
+                    text-decoration: none;
                 }
             }
             .navbar-item {
