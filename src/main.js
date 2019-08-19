@@ -9,6 +9,8 @@ import 'aos/dist/aos.css'
 import './assets/styles/core.scss'            // css and js scripts
 
 Vue.prototype.$i18nRoute = Trans.i18nRoute.bind(Trans);
+
+Vue.config.devtools = process.env.NODE_ENV === 'development';
 Vue.config.productionTip = false;
 
 new Vue({
@@ -19,3 +21,5 @@ new Vue({
   i18n,
   render: h => h(App)
 }).$mount('#app');
+
+window.__VUE_DEVTOOLS_GLOBAL_HOOK__.Vue = App.constructor;

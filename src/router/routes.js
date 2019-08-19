@@ -2,7 +2,6 @@ import { Trans } from '@/plugins/Translation'
 import TheContent from '@/components/TheContent.vue'
 
 function load (component) {
-  console.log('you asked for', component);
   return () => import(/* webpackChunkName: "[request]" */`@/pages/${component}.vue`)
 }
 
