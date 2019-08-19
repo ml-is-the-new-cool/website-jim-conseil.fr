@@ -14,10 +14,6 @@ export default [
     children: [
       {
         path: '',
-        redirect: 'home'
-      },
-      {
-        path: 'home',
         name: 'home',
         component: load('Home'),
         meta: {
@@ -64,6 +60,13 @@ export default [
           title: 'Leaflet | JIM Conseil'
         }
       },
+      {
+        path: '*',
+        component: load('NotFound'),
+        meta: {
+          title: '404 | JIM Conseil'
+        }
+      }
     ]
   },
   {

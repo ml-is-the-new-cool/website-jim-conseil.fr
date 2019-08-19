@@ -1,4 +1,7 @@
 {
+  "general": {
+    "contact": "Restons en contact !"
+  },
   "presentation": {
     "title": "Présentation de la JIM",
     "content": "JIM - pour Junior Informatique Marseille - est la Junior-Entreprise informatique de l’université d’Aix-Marseille. Nous offrons aux entreprises un large panel de services correspondant aux compétences et savoir-faire des élèves. Les missions que vous nous confiez sont proposées par l’équipe stratégique de l’association aux élèves de la formation. Notre parcours spécialisé en informatique nous permet de réaliser la solution la plus fidèle à vos exigences : ingénierie du logiciel (site internet, application de bureau ou mobile), sécurité informatique, base de données, nettoyage des données, modélisation et animations 3D, intelligence artificielle et apprentissage automatique, étude de marché et de faisabilité pour un projet informatique, traduction de documents techniques pointus en anglais."
@@ -30,26 +33,27 @@
   },
   "methodology": {
     "title": "Notre méthodologie",
+    "slogan": "todo",
     "content": [
       {
         "step": 1,
-        "name": "Prise de contact",
-        "text": "Un Junior Consultant membre du pôle stratégique vous rappelle sous 24h pour comprendre vos problématiques, vos attentes et vos impératifs. La prise de contact peut être physique, téléphonique ou par visioconférence."
+        "title": "Prise de contact",
+        "content": "Un Junior Consultant membre du pôle stratégique vous rappelle sous 24h pour comprendre vos problématiques, vos attentes et vos impératifs. La prise de contact peut être physique, téléphonique ou par visioconférence."
       },
       {
         "step": 2,
-        "name": "Avant-projet",
-        "text": "Nous formons l’équipe de Junior Consultants la plus pertinente pour votre projet. Sous 5 jours ouvrés, nous vous présentons l’équipe projet, la méthodologie employée, les délais et le budget adapté à votre demande."
+        "title": "Avant-projet",
+        "content": "Nous formons l’équipe de Junior Consultants la plus pertinente pour votre projet. Sous 5 jours ouvrés, nous vous présentons l’équipe projet, la méthodologie employée, les délais et le budget adapté à votre demande."
       },
       {
         "step": 3,
-        "name": "Phase terrain",
-        "text": "Tout au long du projet, l’équipe projet et un responsable stratégique vous accompagne afin de maintenir vos objectifs au centre de nos réalisations."
+        "title": "Phase terrain",
+        "content": "Tout au long du projet, l’équipe projet et un responsable stratégique vous accompagne afin de maintenir vos objectifs au centre de nos réalisations."
       },
       {
         "step": 4,
-        "name": "Remise et déploiement du livrable",
-        "text": "Nous vous présentons les résultats finaux et élaborons avec vous une stratégie de suivi après-projet."
+        "title": "Remise et déploiement du livrable",
+        "content": "Nous vous présentons les résultats finaux et élaborons avec vous une stratégie de suivi après-projet."
       }
     ]
   },

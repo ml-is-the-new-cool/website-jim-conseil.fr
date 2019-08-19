@@ -16,7 +16,7 @@ import TheNavbar from '../components/TheNavbar.vue';
 //import TheNavbarBis from '../components/TheNavbarBis.vue';
 
 export default {
-  name: '404',
+  name: 'NotFound',
   components: {
     TheNavbar,
     //TheNavbarBis

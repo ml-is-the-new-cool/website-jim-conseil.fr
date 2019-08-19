@@ -1,7 +1,7 @@
 <template>
   <div class="dark-wrapper">
     <!-- Landing page Hero -->
-    <section class="hero is-fullheight is-transparent">
+    <section class="hero is-transparent">
       <div class="hero-head">
         <the-navbar></the-navbar>
       </div>
