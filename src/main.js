@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import { i18n } from './plugins/i18n';
 import { Trans } from './plugins/Translation'
-import './plugins/registerServiceWorker'      // spa support
+import './registerServiceWorker'      // spa support
 import AOS from 'aos'                         // https://michalsnik.github.io/aos/
 import 'aos/dist/aos.css'
 import './assets/styles/core.scss'              // css and js scripts
