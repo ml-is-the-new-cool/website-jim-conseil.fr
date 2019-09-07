@@ -3,9 +3,9 @@
     <div class="container">
       <!-- Logo -->
       <div class="footer-logo">
-          <img class="rotating" :src="gradientImage" alt="">
-          <div class="brand-name">JIM Conseil</div>
-          <div class="brand-subtitle">Beaugossitude brought to another level</div>
+        <img class="rotating" :src="gradientImage" alt="">
+        <div class="brand-name">{{ $t('general.name') }}</div>
+        <div class="brand-subtitle">{{ $t('general.slogan') }}</div>
       </div>
 
       <!-- Columns -->
@@ -14,64 +14,58 @@
           <!-- Links group -->
           <ul class="footer-links">
             <li>
-              <a href="#">Token</a>
+              <router-link :to="$i18nRoute({ name: 'home' })"
+                           class="is-centered-responsive">
+                Accueil
+              </router-link>
             </li>
-
             <li>
-              <a href="#">ICO</a>
-            </li>
-
-            <li>
-              <a href="#">Roadmap</a>
-            </li>
+              <router-link :to="$i18nRoute({ name: 'services' })"
+                           class="is-centered-responsive">
+                Prestations
+              </router-link>
+            </li>            <li>
+            <router-link :to="$i18nRoute({ name: 'methodology' })"
+                         class="is-centered-responsive">
+              Methodologie
+            </router-link>
+          </li>            <li>
+            <router-link :to="$i18nRoute({ name: 'about' })"
+                         class="is-centered-responsive">
+              A propos
+            </router-link>
+          </li>            <li>
+            <router-link :to="$i18nRoute({ name: 'contact' })"
+                         class="is-centered-responsive">
+              Contact
+            </router-link>
+          </li>
           </ul>
-          <p>fais voir bg</p>
-          <p>fais voir bg</p>
-          <p>fais voir bg</p>
-          <p>fais voir bg</p>
-          <p>fais voir bg</p>
-          <p>fais voir bg</p>
         </div>
         <!-- Newsletter -->
         <div class="column is-4">
-          <div class="subscribe-block">
-            <form>
-              <!-- Field -->
-              <div class="control">
-                <!-- Special input -->
-                <input class="krypton-subscribe-input" type="email" name="email" placeholder="">
-                <button class="subscribe-button">
-                  <span>Subscribe</span>
-                </button>
-              </div>
-            </form>
-          </div>
+          <google-map />
         </div>
         <!-- Links group -->
         <div class="column is-4">
           <ul class="footer-links">
             <li>
-              <a href="#">Register</a>
+              <a>UFR Sciences<br/>163, avenue de Luminy<br/>13009 Marseille</a>
             </li>
-
+            <br/>
             <li>
-              <a href="#">Media</a>
+              <a>Linkedin</a>
             </li>
-
-            <li>
-              <a href="#">Telegram</a>
-            </li>
+            <br/>
+            <a class="button k-button k-primary raised has-gradient is-fat is-bold">
+              <span class="text">Restons en contact !</span>
+              <span class="front-gradient"></span>
+            </a>
           </ul>
-          <p>fais voir bg</p>
-          <p>fais voir bg</p>
-          <p>fais voir bg</p>
-          <p>fais voir bg</p>
-          <p>fais voir bg</p>
-          <p>fais voir bg</p>
         </div>
       </div>
       <!-- Copyright -->
-      <p class="k-copyright">© 2019 | JIM Conseil. All Rights Reserved</p>
+      <p class="k-copyright">© 2019 | Junior Informatique Marseille. All Rights Reserved</p>
       <br>
       <!-- Made by -->
       <p class="coded-by">Designed and Coded by Hippolyte L. Debernardi & Toni Garcia</p>
@@ -80,13 +74,17 @@
 </template>
 
 <script>
-  import gradientImage from '@/assets/images/logo/krypton-gradient.svg';
+    import gradientImage from '@/assets/images/logo.png';
+    import GoogleMap from "@/components/GoogleMap.vue";
 
-  export default {
-    data() {
-      return {
-        gradientImage
-      }
+    export default {
+        components: {
+            GoogleMap
+        },
+        data() {
+            return {
+                gradientImage
+            }
+        }
     }
-  }
 </script>

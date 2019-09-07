@@ -7,8 +7,8 @@
         <div class="navbar-brand">
           <router-link :to="$i18nRoute({ name: 'home' })"
                        class="navbar-item">
-            <img class="rotating" :src="logoImage" alt="JIM Conseil">
-            <span class="brand-name">JIM Conseil</span>
+            <img class="rotating" :src="logoImage" alt="JIM">
+            <span class="brand-name">Junior informatique marseille</span>
           </router-link>
           <!-- Responsive toggle -->
           <span @click="activateBurger"
@@ -68,7 +68,7 @@
 </template>
 
 <script>
-  import logoImage from '@/assets/images/logo/krypton.svg'
+  import logoImage from '@/assets/images/logo.png'
 
   export default {
     name: 'navbar',

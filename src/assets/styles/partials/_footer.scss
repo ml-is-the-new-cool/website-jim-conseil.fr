@@ -17,7 +17,7 @@ TABLE OF CONTENTS
 
 .krypton-footer {
     padding: 100px 40px;
-    background: #0f0330;
+    background: #1b2040;
     text-align: center;
     position: relative;
     //Solar system background
@@ -120,6 +120,7 @@ TABLE OF CONTENTS
         //Navigation links
         .footer-links {
             display: flex;
+            flex-direction: column;
             justify-content: space-around;
             align-items: center;
             //Link element

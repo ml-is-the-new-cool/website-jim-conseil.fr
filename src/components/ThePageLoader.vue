@@ -23,7 +23,7 @@
       })
     }
   });
-  console.log('[IN] page loader');
+  // console.log('[IN] page loader');
 
   export default {
     name: 'page-loader'

@@ -54,7 +54,6 @@ const Trans = {
     Trans.currentLanguage = lang;
     axios.defaults.headers.common['Accept-Language'] = lang;
     document.querySelector('html').setAttribute('lang', lang);
-    console.log('set lang to ', lang);
     return lang
   },
   /**

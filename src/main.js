@@ -8,6 +8,14 @@ import AOS from 'aos'                         // https://michalsnik.github.io/ao
 import 'aos/dist/aos.css'
 import './assets/styles/core.scss'            // css and js scripts
 
+import * as VueGoogleMaps from 'vue2-google-maps';
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyC7-9tU5VL1l96hrZeAb6ugsSUtf9LsviM',
+    libraries: 'places'
+  }
+});
+
 Vue.prototype.$i18nRoute = Trans.i18nRoute.bind(Trans);
 
 Vue.config.devtools = process.env.NODE_ENV === 'development';
