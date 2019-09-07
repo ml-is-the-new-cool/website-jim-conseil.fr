@@ -44,7 +44,7 @@
         <div class="columns is-vcentered">
 
           <!-- Landing page Title -->
-          <div class="column landing-caption has-text-centered">
+          <div class="column is-offset-2-touch is-8-touch landing-caption has-text-centered">
             <h1 class="title is-light main-title">
               {{ $t('home.who_are_we') }}
             </h1>

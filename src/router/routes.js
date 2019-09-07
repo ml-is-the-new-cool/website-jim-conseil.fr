@@ -60,6 +60,14 @@ export default [
         }
       },
       {
+        path: 'legals',
+        name: 'legals',
+        component: load('Legals'),
+        meta: {
+          title: 'Legals | JIM Conseil'
+        }
+      },
+      {
         path: '*',
         component: load('NotFound'),
         meta: {

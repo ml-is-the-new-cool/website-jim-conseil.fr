@@ -8,7 +8,8 @@
           <router-link :to="$i18nRoute({ name: 'home' })"
                        class="navbar-item">
             <img class="rotating" :src="logoImage" alt="JIM">
-            <span class="brand-name">Junior informatique marseille</span>
+
+            <span class="brand-name mobile">Junior informatique <br/> marseille</span>
           </router-link>
           <!-- Responsive toggle -->
           <span @click="activateBurger"

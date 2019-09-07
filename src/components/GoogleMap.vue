@@ -1,21 +1,9 @@
 <template>
   <div>
-    <div>
-      <h2>Search and add a pin</h2>
-      <label>
-        <gmap-autocomplete
-          @place_changed="setPlace">
-        </gmap-autocomplete>
-        <button @click="addMarker">Add</button>
-      </label>
-      <br/>
-
-    </div>
-    <br>
     <gmap-map
       :center="center"
       :zoom="12"
-      style="width:100%;  height: 200px;"
+      style="width:100%; height: 200px;"
     >
       <gmap-marker
         :key="index"
