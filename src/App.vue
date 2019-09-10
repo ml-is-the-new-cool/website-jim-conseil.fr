@@ -7,16 +7,18 @@
 </template>
 
 <script>
-import ThePageLoader from './components/ThePageLoader.vue';
-import TheContent from './components/TheContent.vue';
-import TheFooter from './components/TheFooter.vue';
+    import ThePageLoader from './components/ThePageLoader.vue';
+    import TheContent from './components/TheContent.vue';
+    //import TheLinksBar from './components/TheLinksBar.vue';
+    import TheFooter from './components/TheFooter.vue';
 
-export default {
-  name: 'app',
-  components: {
-    ThePageLoader,
-    TheContent,
-    TheFooter
-  }
-}
+    export default {
+        name: 'app',
+        components: {
+            ThePageLoader,
+            TheContent,
+            //TheLinksBar,
+            TheFooter
+        }
+    }
 </script>

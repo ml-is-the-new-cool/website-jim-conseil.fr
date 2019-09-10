@@ -14,65 +14,36 @@ export default [
       {
         path: '',
         name: 'home',
-        component: load('Home'),
-        meta: {
-          title: 'Home | JIM Conseil'
-        }
+        component: load('Home')
       },
       {
         path: 'services',
         name: 'services',
-        component: load('Services'),
-        meta: {
-          title: 'Services | JIM Conseil'
-        }
-      },
-      {
-        path: 'methodology',
-        name: 'methodology',
-        component: load('Methodology'),
-        meta: {
-          title: 'Methodology | JIM Conseil'
-        }
+        component: load('Services')
       },
       {
         path: 'about',
         name: 'about',
-        component: load('About'),
-        meta: {
-          title: 'About | JIM Conseil'
-        }
+        component: load('About')
       },
       {
         path: 'contact',
         name: 'contact',
-        component: load('Contact'),
-        meta: {
-          title: 'Contact | JIM Conseil'
-        }
+        component: load('Contact')
       },
       {
         path: 'leaflet',
         name: 'leaflet',
-        component: load('Leaflet'),
-        meta: {
-          title: 'Leaflet | JIM Conseil'
-        }
+        component: load('Leaflet')
       },
       {
         path: 'legals',
         name: 'legals',
-        component: load('Legals'),
-        meta: {
-          title: 'Legals | JIM Conseil'
-        }
+        component: load('Legals')
       },
       {
         path: '*',
-        component: load('NotFound'),
-        meta: {
-          title: '404 | JIM Conseil'
-        }
+        component: load('NotFound')
       }
     ]
   },

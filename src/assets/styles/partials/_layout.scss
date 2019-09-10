@@ -94,7 +94,7 @@ body {
             }
             //brand text
             .brand-name {
-                font-family: 'Cabin', sans-serif;
+                //font-family: 'Cabin', sans-serif;
                 font-size: 1.2rem;
                 font-weight: 600;
                 padding: 0 10px;
@@ -109,7 +109,7 @@ body {
         //Navbar items
         .navbar-item {
             a.button {
-                font-family: 'Cabin', sans-serif;
+                //font-family: 'Cabin', sans-serif;
                 text-transform: uppercase;
                 &.hover {
                     font-size: .75rem !important;
@@ -119,7 +119,7 @@ body {
             //Nav link modifier
             &.is-nav-link {
                 a {
-                    font-family: 'Cabin', sans-serif;
+                    //font-family: 'Cabin', sans-serif;
                     text-transform: uppercase;
                     font-size: .75rem;
                 }
@@ -298,7 +298,7 @@ body {
 .buy-title {
     padding: 20px 0;
     text-transform: uppercase;
-    font-family: 'Cabin', sans-serif;
+    //font-family: 'Cabin', sans-serif;
     font-size: .8rem;
     color: $white;
     opacity: 0.7;
@@ -354,7 +354,7 @@ body {
 
 //Titles
 .title {
-    font-family: 'Cabin', sans-serif;
+    //font-family: 'Cabin', sans-serif;
     &.main-title {
         text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.1);
     }
@@ -362,7 +362,7 @@ body {
 
 //Subtitles
 .subtitle {
-    font-family: 'Cabin', sans-serif;
+    //font-family: 'Cabin', sans-serif;
     opacity: 0.8;
     &.is-compact {
         max-width: 600px;
@@ -464,13 +464,13 @@ body {
                 }
             }
             .share-title {
-                font-family: 'Cabin', sans-serif;
+                //font-family: 'Cabin', sans-serif;
                 text-transform: uppercase;
                 color: rgba(94,147,255,.9);
                 padding: 5px 0;
             }
             .percentage {
-                font-family: 'Open Sans', sans-serif;
+                //font-family: 'Open Sans', sans-serif;
                 color: rgba(94,147,255,.9);
             }
         }
@@ -493,7 +493,7 @@ body {
         box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
         .documentation-title {
             padding-bottom: 20px;
-            font-family: 'Cabin', sans-serif;
+            //font-family: 'Cabin', sans-serif;
             font-size: 1.8rem;
             color: $white;
         }
@@ -545,7 +545,7 @@ body {
                 div {
                     position: relative;
                     text-align: right;
-                    font-family: 'Cabin', sans-serif;
+                    // font-family: 'Cabin', sans-serif;
                     font-size: .65rem;
                     text-transform: uppercase;
                     &:before {
@@ -685,7 +685,7 @@ body {
                 display: block;
                 &.item-title {
                     color: $white;
-                    font-family: 'Cabin', sans-serif;
+                    //font-family: 'Cabin', sans-serif;
                     font-size: 1.2rem;
                 }
                 &.item-content {
@@ -704,7 +704,7 @@ body {
                     }
                     a {
                         transition: all .3s;
-                        font-family: 'Cabin', sans-serif;
+                        //font-family: 'Cabin', sans-serif;
                         &:hover {
                             color: $light-blue;
                             opacity: 0.7;
@@ -900,7 +900,7 @@ body {
     .categories-widget {
         margin-bottom: 20px;
         .widget-title {
-            font-family: 'Cabin', sans-serif;
+            // font-family: 'Cabin', sans-serif;
             font-size: 1.1rem;
             text-transform: uppercase;
             color: $light-blue;
@@ -914,7 +914,7 @@ body {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    font-family: 'Cabin', sans-serif;
+                    // font-family: 'Cabin', sans-serif;
                     font-size: .95rem;
                     color: $white;
                     opacity: 0.6;
@@ -943,7 +943,7 @@ body {
     .tags-widget {
         margin-bottom: 20px;
         .widget-title {
-            font-family: 'Cabin', sans-serif;
+            // font-family: 'Cabin', sans-serif;
             font-size: 1.1rem;
             text-transform: uppercase;
             color: $light-blue;
@@ -969,7 +969,7 @@ body {
     .archives-widget {
         margin-bottom: 20px;
         .widget-title {
-            font-family: 'Cabin', sans-serif;
+            // font-family: 'Cabin', sans-serif;
             font-size: 1.1rem;
             text-transform: uppercase;
             color: $light-blue;
@@ -986,7 +986,7 @@ body {
 
         .option {
             font-size: .9rem;
-            font-family: 'Cabin', sans-serif;
+            // font-family: 'Cabin', sans-serif;
             font-weight: 300 !important;
             padding:0 30px 0 10px;
             min-height:40px;
@@ -1060,7 +1060,7 @@ body {
         margin-top: 40px;
         margin-bottom: 20px;
         .widget-title {
-            font-family: 'Cabin', sans-serif;
+            //font-family: 'Cabin', sans-serif;
             font-size: 1.1rem;
             text-transform: uppercase;
             color: $light-blue;
@@ -1073,7 +1073,7 @@ body {
                 justify-content: flex-start;
                 align-items: center;
                 margin-bottom: 20px;
-                font-family: 'Cabin', sans-serif;
+                //font-family: 'Cabin', sans-serif;
                 img {
                     height: 32px;
                     width: 32px;
@@ -1111,18 +1111,18 @@ body {
         padding: 20px 60px;
         .intro {
             font-style: italic;
-            font-family: 'Cabin', sans-serif;
+            //font-family: 'Cabin', sans-serif;
             color: $white;
             opacity: 0.8;
         }
         h2 {
-            font-family: 'Cabin', sans-serif;
+            //font-family: 'Cabin', sans-serif;
             font-size: 1.5rem;
             color: $white;
             padding: 10px 0;
         }
         p {
-            font-family: 'Cabin', sans-serif;
+            //font-family: 'Cabin', sans-serif;
             font-size: .9rem;
             color: $white;
             padding-bottom: 20px;
@@ -1163,11 +1163,11 @@ body {
                     }
                     span {
                         font-size: .9rem;
-                        font-family: 'Cabin', sans-serif;
+                        //font-family: 'Cabin', sans-serif;
                         color: $light-blue;
                     }
                     small {
-                        font-family: 'Cabin', sans-serif;
+                        //font-family: 'Cabin', sans-serif;
                         font-size: .8rem;
                         color: $light-blue;
                         opacity: 0.7;
@@ -1175,7 +1175,7 @@ body {
                     }
                 }
                 p {
-                    font-family: 'Cabin', sans-serif;
+                    //font-family: 'Cabin', sans-serif;
                     font-size: .9rem;
                     color: $white;
                     opacity: 0.7;

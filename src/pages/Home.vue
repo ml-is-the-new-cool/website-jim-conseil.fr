@@ -1,5 +1,5 @@
 <template>
-  <div class="dark-wrapper">
+  <div class="roadmap-wrapper">
     <!-- Landing page Hero -->
     <section class="hero is-fullheight is-transparent">
       <div class="hero-head">
@@ -21,12 +21,12 @@
                 {{ $t('general.slogan') }}
               </h2>
               <!-- CTA -->
-              <p>
+              <!--p>
                 <a href="#start" class="button k-button k-primary raised has-gradient is-fat is-bold">
-                  <span class="text">Get Started</span>
+                  <span class="text"></span>
                   <span class="front-gradient"></span>
                 </a>
-              </p>
+              </p-->
 
             </div>
           </div>
@@ -36,30 +36,6 @@
     </section>
     <!-- /Landing page Hero -->
 
-    <!-- Icon Features section -->
-    <section id="start" class="section is-transparent is-relative">
-      <!-- Container -->
-      <div class="container">
-
-        <div class="columns is-vcentered">
-
-          <!-- Landing page Title -->
-          <div class="column is-offset-2-touch is-8-touch landing-caption has-text-centered">
-            <h1 class="title is-light main-title">
-              {{ $t('home.who_are_we') }}
-            </h1>
-            <p>
-              {{ $t('home.description') }}
-            </p>
-
-          </div>
-        </div>
-        <!-- Content wrapper -->
-      </div>
-      <!-- /Container -->
-    </section>
-    <!-- /Icon Features section -->
-
     <!-- Side Features section -->
     <section id="big-gradient" class="section is-transparent">
       <!-- Container -->
@@ -67,103 +43,95 @@
         <!-- Divider -->
         <div class="divider is-centered"></div>
         <!-- Title & subtitle -->
-        <h2 class="title is-light is-semibold has-text-centered is-spaced">Decentralized Exchange</h2>
-        <h4 class="subtitle is-6 is-light has-text-centered is-compact">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Ut sea pertinax perpetua, eruditi volumus quaestio ex mel, has ei tota homero.</h4>
-
-        <!-- Content wrapper -->
-        <div class="content-wrapper is-large">
-          <div class="columns is-vcentered">
-
-            <!-- Feature content -->
-            <div class="column is-5 is-offset-1">
-              <div class="side-feature-content">
-
-                <h3 class="title is-4 is-light"><img src="assets/images/icons/ico/bitbanner.svg" alt=""> <span>Token Building</span></h3>
-                <div class="divider is-long"></div>
-                <p class="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
-                <div class="cta-wrapper">
-                  <a href="token.html" class="button k-button k-primary raised has-gradient is-bold">
-                    <span class="text">Learn More</span>
-                    <span class="front-gradient"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Feature image -->
-            <div class="column is-7">
-              <img class="side-feature" src="assets/images/illustrations/token.svg" alt="">
-            </div>
-          </div>
-
-          <div class="columns is-vcentered">
-            <!-- Feature image desktop -->
-            <div class="column is-7 is-hidden-mobile">
-              <img class="side-feature" src="assets/images/illustrations/blockchain-blocks.svg" alt="">
-            </div>
-
-            <!-- Feature content -->
-            <div class="column is-5">
-              <div class="side-feature-content">
-
-                <h3 class="title is-4 is-light"><img src="assets/images/icons/ico/bitnetwork.svg" alt=""> <span>Cascading Blockchain</span></h3>
-                <div class="divider is-long"></div>
-                <p class="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
-                <div class="cta-wrapper">
-                  <a href="#" class="button k-button k-primary raised has-gradient is-bold">
-                    <span class="text">Whitepaper</span>
-                    <span class="front-gradient"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Feature image only for mobile -->
-            <div class="column is-7 is-hidden-desktop is-hidden-tablet">
-              <img class="side-feature" src="assets/images/illustrations/blockchain-blocks.svg" alt="">
-            </div>
-          </div>
-
-          <div class="columns is-vcentered">
-            <!-- Feature content -->
-            <div class="column is-5 is-offset-1">
-              <div class="side-feature-content">
-
-                <h3 class="title is-4 is-light"><img src="assets/images/icons/ico/bitmining.svg" alt=""> <span>Crypto Farming</span></h3>
-                <div class="divider is-long"></div>
-                <p class="is-light">Viderer malorum sadipscing cum ei. Eu impetus perfecto sit, no sea labore detraxit. Primis mediocrem necessitatibus an vis. Eu impetus perfecto sit, no sea labore detraxit.</p>
-                <div class="cta-wrapper">
-                  <a href="#" class="button k-button k-primary raised has-gradient is-bold">
-                    <span class="text">Join the ICO</span>
-                    <span class="front-gradient"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Feature image -->
-            <div class="column is-7">
-              <img class="side-feature" src="assets/images/illustrations/crypto-mining.svg" alt="">
-            </div>
-          </div>
+        <h2 class="title is-light is-semibold has-text-centered is-spaced">
+          {{ $t('about.title') }}
+        </h2>
+        <div v-for="(paragraph) in $t('about.description')"
+             :key="paragraph">
+          <h4 class="subtitle is-6 is-light has-text-centered is-compact">
+            {{ paragraph }}
+          </h4>
+          <br/>
         </div>
-        <!-- /Content wrapper -->
       </div>
-      <!-- /Container -->
     </section>
     <!-- /Side Features section -->
+
+    <!-- Methodology section -->
+
+    <section id="roadmap" class="main-timeline">
+      <div class="container">
+        <!-- Divider -->
+        <div class="divider is-centered"></div>
+        <!-- Title & subtitle -->
+        <h2 class="title is-light is-semibold has-text-centered is-spaced">
+          {{ $t('methodology.title') }}
+        </h2>
+        <br/>
+      </div>
+
+      <div>
+        <ul>
+          <li v-for="item in $t('methodology.content')"
+              :key="item.step">
+            <div>
+              <span class="item-title">{{ item.title }}</span>
+              <span class="item-content">{{ item.content }}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Methodology section -->
+
+    <the-links-bar/>
+
   </div>
 </template>
 
 <script>
-  import TheNavbar from '@/components/TheNavbar.vue';
-  import TheNavbarBis from '@/components/TheNavbarBis.vue';
+    import TheNavbar from '@/components/TheNavbar.vue';
+    import TheNavbarBis from '@/components/TheNavbarBis.vue';
+    import TheLinksBar from '@/components/TheLinksBar.vue';
 
-  export default {
-    name: 'home',
-    components: {
-      TheNavbar,
-      TheNavbarBis
+    export default {
+        name: 'home',
+        components: {
+            TheNavbar,
+            TheNavbarBis,
+            TheLinksBar
+        },
     }
-  }
+
+    import $ from 'jquery'
+    $(document).ready(function(){
+        'use strict';
+        // define variables
+        let items = document.querySelectorAll(".main-timeline li");
+
+        // check if an element is in viewport
+        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        function isElementInViewport(el) {
+            let rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function callbackFunc() {
+            for (let i = 0; i < items.length; i++) {
+                if (isElementInViewport(items[i])) {
+                    items[i].classList.add("in-view");
+                }
+            }
+        }
+
+        // listen for events
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+    });
 </script>

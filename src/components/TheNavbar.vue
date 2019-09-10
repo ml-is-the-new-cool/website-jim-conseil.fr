@@ -9,12 +9,14 @@
                        class="navbar-item">
             <img class="rotating" :src="logoImage" alt="JIM">
 
-            <span class="brand-name mobile">Junior informatique <br/> marseille</span>
+            <span class="brand-name mobile">
+              Junior Informatique <br/> Marseille
+            </span>
           </router-link>
           <!-- Responsive toggle -->
-          <span @click="activateBurger"
-                  v-bind:class="{ 'is-active': isBurgerActive }"
-                  class="navbar-burger burger" data-target="navbarMenu">
+          <span @click.prevent="toggleMenu"
+                v-bind:class="{ 'is-active': isMenuVisible }"
+                class="navbar-burger burger" data-target="navbarMenu">
             <span></span>
             <span></span>
             <span></span>
@@ -22,41 +24,34 @@
         </div>
         <!-- Menu -->
         <div id="navbarMenu" class="navbar-menu"
-             v-bind:class="{'is-active' : isBurgerActive }">
+             v-bind:class="{'is-active' : isMenuVisible }">
           <div class="navbar-end">
             <!-- Menu item -->
             <div class="navbar-item is-nav-link">
               <router-link :to="$i18nRoute({ name: 'services' })"
                            class="is-centered-responsive">
-                Services
-              </router-link>
-            </div>
-            <!-- Menu item -->
-            <div class="navbar-item is-nav-link">
-              <router-link :to="$i18nRoute({ name: 'methodology' })"
-                           class="is-centered-responsive">
-                Methodology
+                {{ $t('links.pages.services') }}
               </router-link>
             </div>
             <!-- Menu item -->
             <div class="navbar-item is-nav-link">
               <router-link :to="$i18nRoute({ name: 'about' })"
                            class="is-centered-responsive">
-                About
+                {{ $t('links.pages.about') }}
               </router-link>
             </div>
             <!-- Menu item -->
             <div class="navbar-item is-nav-link">
               <router-link :to="$i18nRoute({ name: 'contact' })"
                            class="is-centered-responsive">
-                Contact
+                {{ $t('links.pages.contact') }}
               </router-link>
             </div>
             <!-- Leaflet button -->
             <div class="navbar-item">
               <router-link :to="$i18nRoute({ name: 'leaflet' })"
                            class="button k-button k-primary raised has-gradient slanted">
-                <span class="text">Leaflet</span>
+                <span class="text">{{ $t('links.pages.leaflet') }}</span>
                 <span class="front-gradient"></span>
               </router-link>
             </div>
@@ -69,21 +64,26 @@
 </template>
 
 <script>
-  import logoImage from '@/assets/images/logo.png'
+    import logoImage from '@/assets/images/logo.png'
 
-  export default {
-    name: 'navbar',
-    data() {
-      return {
-        logoImage,
-        isBurgerActive: false
-      }
-    },
-    methods: {
-      activateBurger() {
-        this.isBurgerActive = !this.isBurgerActive;
-        return this.isBurgerActive
-      }
+    export default {
+        name: 'the-navbar',
+
+        data() {
+            return {
+                logoImage
+            }
+        },
+        computed: {
+            isMenuVisible() {
+                return this.isBurgerActive;
+            }
+        },
+
+        methods: {
+            toggleMenu() {
+                this.isBurgerActive = !this.isBurgerActive;
+            }
+        }
     }
-  }
 </script>

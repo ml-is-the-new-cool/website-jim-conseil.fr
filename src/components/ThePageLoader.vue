@@ -23,7 +23,6 @@
       })
     }
   });
-  // console.log('[IN] page loader');
 
   export default {
     name: 'page-loader'

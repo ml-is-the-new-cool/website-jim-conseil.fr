@@ -3,7 +3,8 @@
     <!-- Landing page Hero -->
     <section class="hero is-transparent">
       <div class="hero-head">
-        <the-navbar></the-navbar>
+        <the-navbar/>
+        <the-navbar-bis/>
       </div>
     </section>
 
@@ -88,14 +89,14 @@
 </template>
 
 <script>
-  import TheNavbar from '../components/TheNavbar.vue';
-  //import TheNavbarBis from '../components/TheNavbarBis.vue';
+  import TheNavbar from '@/components/TheNavbar.vue';
+  import TheNavbarBis from '@/components/TheNavbarBis.vue';
 
   export default {
     name: 'contact',
     components: {
       TheNavbar,
-      //TheNavbarBis
+      TheNavbarBis
     }
   }
 </script>

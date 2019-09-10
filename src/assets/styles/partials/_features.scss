@@ -71,10 +71,10 @@ TABLE OF CONTENTS
     }
     h4 {
         margin-top: 10px;
-        font-family: 'Cabin', sans-serif;
+        //font-family: 'Cabin', sans-serif;
     }
     p {
-        font-family: 'Open Sans', sans-serif;
+        //font-family: 'Open Sans', sans-serif;
         font-size: .9rem;
         opacity: 0.8;
     }
@@ -129,6 +129,7 @@ TABLE OF CONTENTS
     margin: 0 auto;
     //tabs
     .flying-tabs {
+
         //tab-item
         .flying-child {
             display: inline;
@@ -139,7 +140,7 @@ TABLE OF CONTENTS
         }
         //link element
         a {
-            font-family: 'Cabin', sans-serif;
+            // font-family: 'Cabin', sans-serif;
             display: inline-block;
             width: 24.4%;
             padding: .75rem 0;
@@ -209,7 +210,7 @@ TABLE OF CONTENTS
                 div {
                     position: relative;
                     text-align: right;
-                    font-family: 'Cabin', sans-serif;
+                    // font-family: 'Cabin', sans-serif;
                     font-size: .65rem;
                     text-transform: uppercase;
                     &:before {
@@ -278,7 +279,7 @@ TABLE OF CONTENTS
             li {
                 padding: 10px 0;
                 color: $white;
-                font-family: 'Open Sans', sans-serif;
+                // font-family: 'Open Sans', sans-serif;
                 font-weight: 300;
                 &:first-child {
                     animation-delay: .15s;
@@ -291,12 +292,12 @@ TABLE OF CONTENTS
                 }
                 span {
                     &:first-child {
-                        font-family: 'Cabin', sans-serif;
+                        // font-family: 'Cabin', sans-serif;
                     }
                     &.item-content {
                         margin: 0 16px !important;
                         font-size: 90%;
-                        font-family: 'Open Sans', sans-serif;
+                        // font-family: 'Open Sans', sans-serif;
                         font-weight: 300;
                         color: #e8e8e8;
                     }
@@ -318,7 +319,7 @@ ul#countdown {
     color: #fff;
     border-width: 1px 0;
     overflow: hidden;
-    font-family: 'Arial Narrow', Arial, sans-serif;
+    // font-family: 'Arial Narrow', Arial, sans-serif;
     font-weight: 500;
     //Left pulled
     &.is-pulled-left {

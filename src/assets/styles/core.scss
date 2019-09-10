@@ -22,6 +22,10 @@ $navbar-background-color: dark-blue !important;
 
 @import "~bulma";
 
+body {
+  font-family: 'Kollektif', sans-serif;
+}
+
 @import 'partials/theme-default';
 @import 'partials/colors';
 @import 'partials/layout';
