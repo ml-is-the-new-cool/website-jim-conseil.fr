@@ -18,10 +18,17 @@
 
     export default {
         name: 'contact',
+
         components: {
             TheNavbar,
             TheNavbarBis,
             TheLinksBar
-        }
+        },
+
+        metaInfo() {
+            return {
+                title: this.$i18n.t('links.pages.legals'),
+            }
+        },
     }
 </script>

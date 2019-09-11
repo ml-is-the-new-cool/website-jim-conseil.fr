@@ -97,15 +97,15 @@
 
             onScroll() {
                 const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-                console.log('current : ', currentScrollPosition);
-                console.log('old : ', this.lastScrollPosition);
+                //console.log('current : ', currentScrollPosition);
+                //console.log('old : ', this.lastScrollPosition);
                 if (currentScrollPosition < 0) {
                     return
                 }
                 // Stop executing this function if the difference between
                 // current scroll position and last scroll position is less than some offset
                 if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 20) {
-                    console.log('not enought');
+                    //console.log('not enought');
                     return
                 }
                 this.showNavBar(currentScrollPosition < this.lastScrollPosition);

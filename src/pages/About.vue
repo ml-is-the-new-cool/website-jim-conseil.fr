@@ -150,10 +150,17 @@
 
     export default {
         name: 'about',
+
         components: {
             TheNavbar,
             TheNavbarBis,
             TheLinksBar
-        }
+        },
+
+        metaInfo() {
+            return {
+                title: this.$i18n.t('links.pages.about'),
+            }
+        },
     }
 </script>

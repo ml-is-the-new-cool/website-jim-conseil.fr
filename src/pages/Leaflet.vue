@@ -12,14 +12,21 @@
 </template>
 
 <script>
-import TheNavbar from '../components/TheNavbar.vue';
-//import TheNavbarBis from '../components/TheNavbarBis.vue';
+    import TheNavbar from '../components/TheNavbar.vue';
+    //import TheNavbarBis from '../components/TheNavbarBis.vue';
 
-export default {
-  name: 'leaflet',
-  components: {
-    TheNavbar,
-    //TheNavbarBis
-  }
-}
+    export default {
+        name: 'leaflet',
+
+        components: {
+            TheNavbar,
+            //TheNavbarBis
+        },
+
+        metaInfo() {
+            return {
+                title: this.$i18n.t('links.pages.leaflet'),
+            }
+        },
+    }
 </script>

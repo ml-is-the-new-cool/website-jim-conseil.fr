@@ -100,6 +100,13 @@
 
     export default {
         name: 'home',
+
+        metaInfo() {
+            return {
+                title: this.$i18n.t('links.pages.home'),
+            }
+        },
+
         components: {
             TheNavbar,
             TheNavbarBis,

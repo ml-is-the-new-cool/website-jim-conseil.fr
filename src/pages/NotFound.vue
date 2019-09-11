@@ -3,7 +3,7 @@
     <!-- Landing page Hero -->
     <section class="hero is-fullheight is-transparent">
       <div class="hero-head">
-        <the-navbar></the-navbar>
+        <the-navbar/>
       </div>
       404 not found
     </section>
@@ -12,14 +12,19 @@
 </template>
 
 <script>
-import TheNavbar from '../components/TheNavbar.vue';
-//import TheNavbarBis from '../components/TheNavbarBis.vue';
+    import TheNavbar from '../components/TheNavbar.vue';
 
-export default {
-  name: 'NotFound',
-  components: {
-    TheNavbar,
-    //TheNavbarBis
-  }
-}
+    export default {
+        name: 'not-found',
+
+        components: {
+            TheNavbar
+        },
+
+        metaInfo() {
+            return {
+                title: this.$i18n.t('links.pages.notFound'),
+            }
+        },
+    }
 </script>

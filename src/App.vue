@@ -14,11 +14,17 @@
 
     export default {
         name: 'app',
+
         components: {
             ThePageLoader,
             TheContent,
             //TheLinksBar,
             TheFooter
+        },
+
+        metaInfo: {
+            title: 'Default',
+            titleTemplate: '%s | JIM'
         }
     }
 </script>

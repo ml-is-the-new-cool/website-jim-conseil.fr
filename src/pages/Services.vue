@@ -50,7 +50,7 @@
                   <div class="column is-5 is-offset-1">
                     <div class="text-content">
                       <p class="title is-6 is-light animated preFadeInUp fadeInUp">
-                      {{ selectedService.description}}
+                        {{ selectedService.description}}
                       </p>
                     </div>
                   </div>
@@ -97,10 +97,17 @@
 
     export default {
         name: 'services',
+
         components: {
             TheNavbar,
             TheNavbarBis,
             TheLinksBar
+        },
+
+        metaInfo() {
+            return {
+                title: this.$i18n.t('links.pages.services'),
+            }
         },
 
         data() {
