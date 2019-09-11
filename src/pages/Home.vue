@@ -1,5 +1,5 @@
 <template>
-  <div class="roadmap-wrapper">
+  <div class="dark-wrapper">
     <!-- Landing page Hero -->
     <section class="hero is-fullheight is-transparent">
       <div class="hero-head">
@@ -16,7 +16,9 @@
 
             <!-- Landing page Title -->
             <div class="column landing-caption has-text-centered">
-              <h1 class="title is-light main-title">{{ $t('general.name') }}</h1>
+              <h1 class="title is-light main-title">
+                {{ $t('general.name') }}
+              </h1>
               <h2 class="subtitle is-light is-thin">
                 {{ $t('general.slogan') }}
               </h2>
@@ -37,7 +39,7 @@
     <!-- /Landing page Hero -->
 
     <!-- Side Features section -->
-    <section id="big-gradient" class="section is-transparent">
+    <section class="section is-transparent">
       <!-- Container -->
       <div class="container">
         <!-- Divider -->
@@ -59,29 +61,31 @@
 
     <!-- Methodology section -->
 
-    <section id="roadmap" class="main-timeline">
-      <div class="container">
-        <!-- Divider -->
-        <div class="divider is-centered"></div>
-        <!-- Title & subtitle -->
-        <h2 class="title is-light is-semibold has-text-centered is-spaced">
-          {{ $t('methodology.title') }}
-        </h2>
-        <br/>
-      </div>
+    <div class="roadmap-wrapper">
+      <section class="main-timeline">
+        <div class="container">
+          <!-- Divider -->
+          <div class="divider is-centered"></div>
+          <!-- Title & subtitle -->
+          <h2 class="title is-light is-semibold has-text-centered is-spaced">
+            {{ $t('methodology.title') }}
+          </h2>
+          <br/>
+        </div>
 
-      <div>
-        <ul>
-          <li v-for="item in $t('methodology.content')"
-              :key="item.step">
-            <div>
-              <span class="item-title">{{ item.title }}</span>
-              <span class="item-content">{{ item.content }}</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <div>
+          <ul>
+            <li v-for="item in $t('methodology.content')"
+                :key="item.step">
+              <div>
+                <span class="item-title">{{ item.title }}</span>
+                <span class="item-content">{{ item.content }}</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
     <!-- Methodology section -->
 
     <the-links-bar/>

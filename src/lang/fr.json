@@ -50,9 +50,9 @@
   "about": {
     "title" : "Qu'est ce que JIM ?",
     "description": [
-      "Junior Informatique Marseille - JIM - est une association au service des entreprises gérée par des étudiants du master informatique d’Aix-Marseille. Depuis 2018, le master rassemble l’intégralité des spécialités informatiques enseignées dans la région, ce qui nous permet la solution la plus fidèle à vos exigences.",
-      "Nous vous offrons un large panel de services correspondant aux compétences et savoir-faire des élèves : ingénierie du logiciel (site internet, application de bureau ou mobile), sécurité informatique, base de données, nettoyage des données, modélisation et animations 3D, intelligence artificielle et apprentissage automatique, implémentation d’outils relevant du langage naturel, traduction de documents techniques en anglais, étude de marché et de faisabilité pour un projet informatique. Les missions que vous nous confiez sont proposées par l’équipe stratégique de l’association aux élèves de la formation.",
-      "Gage de qualité, les JMIsts s’assurent de la pertinence de leurs créations sur tout le cycle de vie de la mission confiée : des contrôles réguliers viennent valider vos exigences afin d’entamer la prochaine étape."
+      "Junior Informatique Marseille - JIM - est une association au service des entreprises gérée par des étudiants du master informatique d’Aix-Marseille Université. Depuis 2018, le master rassemble l’intégralité des spécialités informatiques enseignées dans la région, ce qui nous permet de vous proposer la solution la plus adaptée à vos exigences.",
+      "Nous vous offrons un large éventail de services correspondant aux compétences et savoir-faire des élèves : ingénierie du logiciel (site internet, application de bureau ou mobile), sécurité informatique, base de données, nettoyage des données, modélisation et animations 3D, intelligence artificielle et apprentissage automatique, implémentation d’outils relevant du langage naturel, traduction de documents techniques en anglais, étude de marché et de faisabilité pour un projet informatique.",
+      "Les missions que vous nous confiez sont proposées par l’équipe stratégique de l’association aux élèves de la formation. Nous formons le groupe de travail et encadrons les étudiants réalisant ces prestations. De plus, ces derniers bénéficient de l'expertise des enseignants-chercheurs et du matériel du laboratoire informatique."
     ]
   },
 
@@ -62,7 +62,7 @@
       {
         "step": 1,
         "title": "Prise de contact",
-        "content": "Un Junior Consultant membre du pôle stratégique vous rappelle sous 24h pour comprendre vos problématiques, vos attentes et vos impératifs. La prise de contact peut être physique, téléphonique ou par visioconférence."
+        "content": "Un Junior Consultant membre du pôle stratégique vous rappelle sous 48h pour comprendre vos problématiques, vos attentes et vos impératifs. La prise de contact peut être physique, téléphonique ou par visioconférence."
       },
       {
         "step": 2,
@@ -72,7 +72,7 @@
       {
         "step": 3,
         "title": "Phase terrain",
-        "content": "Tout au long du projet, l’équipe projet et un responsable stratégique vous accompagne afin de maintenir vos objectifs au centre de nos réalisations."
+        "content": "Tout au long du projet, l’équipe projet et un responsable stratégique vous accompagne afin de maintenir vos objectifs au centre de nos réalisations. Nous choisissons avec vous des résultats intermédiaires pour valider chaque phase avant de commencer la suivante."
       },
       {
         "step": 4,

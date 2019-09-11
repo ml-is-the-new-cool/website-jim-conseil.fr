@@ -24,11 +24,11 @@ TABLE OF CONTENTS
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: $fade-grey;
+    background-color: $primary;
     z-index: 999998;
     transition: -webkit-transform 0.35s ease-out;
-    transition: transform 0.35s ease-out;
-    transition: transform 0.35s ease-out, -webkit-transform 0.35s ease-out;
+    //transition: transform 0.35s ease-out;
+    //transition: transform 0.35s ease-out, -webkit-transform 0.35s ease-out;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     will-change: transform;
@@ -38,7 +38,10 @@ TABLE OF CONTENTS
         transform: translateX(0);
     }
     &.is-theme {
-        background-image: linear-gradient(to bottom, #22005b 0%, #161a31 100%) !important;
+        background-image: linear-gradient(
+                        to bottom,
+                        $primary 0%,
+                        $black 100%) !important;
     }
 
     &::after, &::before {
@@ -56,8 +59,8 @@ TABLE OF CONTENTS
         margin-left: -100px;
         width: 200px;
         height: 200px;
-        background-color: rgba(255, 255, 255, 0.5);
-        border: 3px solid rgba(255, 255, 255, 0.75);
+        background-color: $white;//rgba(255, 255, 255, 0.5);
+        border: 3px solid $white;//rgba(255, 255, 255, 0.75);
         -webkit-animation: page-loader-inner 1.5s infinite ease-out;
         animation: page-loader-inner 1.5s infinite ease-out;
     }
@@ -67,7 +70,7 @@ TABLE OF CONTENTS
         margin-left: -30px;
         width: 60px;
         height: 60px;
-        background-color: #fff;
+        background-color: $white;
         -webkit-animation: page-loader-outer 1.5s infinite ease-in;
         animation: page-loader-outer 1.5s infinite ease-in;
     }
@@ -140,7 +143,7 @@ TABLE OF CONTENTS
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #22005b;
+    background-color: $primary;
     z-index: -1;
     opacity: 0;
     transition: opacity .35s;

@@ -1,30 +1,30 @@
 <template>
   <!-- Static navbar -->
   <div class="hero-head">
-    <nav class="navbar is-light is-transparent">
+    <nav :class="{'hidden': !isNavBarVisible}"
+         class="navbar is-light is-transparent">
       <div class="container">
         <!-- Brand -->
         <div class="navbar-brand">
           <router-link :to="$i18nRoute({ name: 'home' })"
                        class="navbar-item">
-            <img class="rotating" :src="logoImage" alt="JIM">
+            <img class="" :src="logoImage" alt="JIM">
 
             <span class="brand-name mobile">
               Junior Informatique <br/> Marseille
             </span>
           </router-link>
           <!-- Responsive toggle -->
-          <span @click.prevent="toggleMenu"
-                v-bind:class="{ 'is-active': isMenuVisible }"
-                class="navbar-burger burger" data-target="navbarMenu">
+          <span @click.prevent="activateNavBar"
+                class="navbar-burger burger">
             <span></span>
             <span></span>
             <span></span>
         </span>
         </div>
         <!-- Menu -->
-        <div id="navbarMenu" class="navbar-menu"
-             v-bind:class="{'is-active' : isMenuVisible }">
+        <div v-bind:class="isNavBarActive ? 'is-active' : ''"
+             class="navbar-menu">
           <div class="navbar-end">
             <!-- Menu item -->
             <div class="navbar-item is-nav-link">
@@ -71,19 +71,53 @@
 
         data() {
             return {
-                logoImage
+                logoImage,
+                lastScrollPosition: 0
             }
         },
         computed: {
-            isMenuVisible() {
-                return this.isBurgerActive;
+            isNavBarVisible() {
+                return this.$store.state.isNavBarVisible;
+            },
+
+            isNavBarActive() {
+                return this.$store.state.isNavBarActive;
             }
         },
 
         methods: {
-            toggleMenu() {
-                this.isBurgerActive = !this.isBurgerActive;
+            activateNavBar() {
+                this.$store.commit('activateNavBar', !this.isNavBarActive);
+            },
+
+            showNavBar(visible) {
+                //console.log('changed');
+                this.$store.commit('showNavBar', visible);
+            },
+
+            onScroll() {
+                const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+                console.log('current : ', currentScrollPosition);
+                console.log('old : ', this.lastScrollPosition);
+                if (currentScrollPosition < 0) {
+                    return
+                }
+                // Stop executing this function if the difference between
+                // current scroll position and last scroll position is less than some offset
+                if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 20) {
+                    console.log('not enought');
+                    return
+                }
+                this.showNavBar(currentScrollPosition < this.lastScrollPosition);
+                this.lastScrollPosition = currentScrollPosition;
             }
+        },
+
+        mounted () {
+            window.addEventListener('scroll', this.onScroll)
+        },
+        beforeDestroy () {
+            window.removeEventListener('scroll', this.onScroll)
         }
     }
 </script>

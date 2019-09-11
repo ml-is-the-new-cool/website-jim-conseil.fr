@@ -50,7 +50,6 @@
 <script>
   import TheNavbar from '@/components/TheNavbar.vue'
   import TheNavbarBis from '@/components/TheNavbarBis.vue'
-  import titleImage from '@/assets/images/illustrations/world.svg'
 
   export default {
     name: 'methodology',
@@ -59,10 +58,5 @@
       TheNavbarBis
     },
 
-    data() {
-      return {
-        titleImage
-      }
-    }
   }
 </script>

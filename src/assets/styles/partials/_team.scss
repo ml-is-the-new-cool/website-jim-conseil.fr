@@ -116,26 +116,3 @@ TABLE OF CONTENTS
         }
     }
 }
-
-/* ==========================================================================
-1. Advisors Section
-========================================================================== */
-
-//Container
-.advisor-container {
-    //image
-    img {
-        height: 70px;
-        width: 70px;
-        border-radius: 50%;
-    }
-    //Meta
-    .info {
-        .position {
-            text-transform: uppercase;
-            font-family: 'Open Sans', sans-serif;
-            font-size: .75rem;
-            color: $primary;
-        }
-    }
-}

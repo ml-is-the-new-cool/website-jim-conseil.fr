@@ -30,7 +30,7 @@ body {
 .dark-wrapper {
     background: url(../images/bg/gradient-left-darker.png) repeat-y top left,
     url(../images/bg/gradient-right-darker.png) repeat-y top right,
-    #1c004c;
+    $primary;
 }
 
 .hero, .section {
@@ -204,6 +204,11 @@ body {
     }
 }
 
+.hidden {
+    box-shadow: none;
+    transform: translate3d(0, -100%, 0);
+}
+
 //Telegram icon tweaking to insert into navbar
 .telegram {
     height: 13px;
@@ -374,7 +379,7 @@ body {
 .divider {
     height: 3px;
     width: 75px;
-    @include primary-gradient-left();
+    @include secondary-gradient-left();
     margin: 20px 0;
     //Centered modifier
     &.is-centered {
@@ -610,12 +615,6 @@ body {
 /* ==========================================================================
 6. Roadmap page
 ========================================================================== */
-
-.roadmap-wrapper {
-    background: url(../images/bg/bg-token-top.png) no-repeat top center,
-    url(../images/bg/bg-token-left.png) no-repeat top left,
-    url(../images/bg/bg-token-bottom.png) no-repeat bottom right,#1c004c;
-}
 
 .roadmap-wrapper {
     .roadmap-image img {

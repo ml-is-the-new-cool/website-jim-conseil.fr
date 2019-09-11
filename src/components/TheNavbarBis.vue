@@ -1,6 +1,6 @@
 <template>
   <!-- Cloned navbar that comes in on scroll -->
-  <nav id="navbar-clone" class="navbar is-fixed is-dark">
+  <nav id="navbar-clone" class="navbar is-fixed">
     <div class="container">
       <!-- Brand -->
       <div class="navbar-brand">
@@ -12,15 +12,16 @@
             </span>
         </router-link>
         <!-- Responsive toggle -->
-        <span class="navbar-burger burger"
-              data-target="cloneNavbarMenu">
+        <span @click.prevent="toggleMenu"
+              class="navbar-burger burger">
           <span></span>
           <span></span>
           <span></span>
         </span>
       </div>
       <!-- Menu -->
-      <div id="cloneNavbarMenu" class="navbar-menu">
+      <div v-bind:class="isMenuVisible ? 'is-active' : ''"
+           class="navbar-menu">
         <div class="navbar-end">
           <!-- Menu item -->
           <div class="navbar-item is-nav-link">
@@ -64,53 +65,25 @@
 
 <script>
     import logoImage from '@/assets/images/logo.png'
-    import $ from 'jquery'
 
     export default {
-        name: 'the-navbar-bis',
+        name: 'the-navbar',
+
         data() {
             return {
                 logoImage
             }
         },
-
         computed: {
             isMenuVisible() {
-                return this.isBurgerActive;
+                return this.$store.state.menuVisible;
             }
         },
 
         methods: {
             toggleMenu() {
-                this.isBurgerActive = !this.isBurgerActive;
+                this.$store.commit('showMenu', !this.isMenuVisible);
             }
         }
     }
-
-    $(document).ready(function() {
-        "use strict";
-        //Navbar Clone
-        if ($('#navbar-clone').length) {
-            $(window).scroll(function () {    // this will work when your window scrolled.
-                let height = $(window).scrollTop();  //getting the scrolling height of window
-                if (height > 50) {
-                    $("#navbar-clone").addClass('is-active');
-                } else {
-                    $("#navbar-clone").removeClass('is-active');
-                }
-            });
-        }
-
-        //Mobile menu toggle
-        if ($('.navbar-burger').length) {
-            $('.navbar-burger').on("click", function () {
-
-                var menu_id = $(this).attr('data-target');
-                $(this).toggleClass('is-active');
-                $("#" + menu_id).toggleClass('is-active');
-                $('.navbar.is-light').toggleClass('is-dark-mobile')
-            });
-        }
-    });
-
 </script>

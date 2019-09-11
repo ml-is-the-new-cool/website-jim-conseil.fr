@@ -1,7 +1,7 @@
 <template>
-  <div class="roadmap-wrapper">
+  <div class="dark-wrapper">
     <!-- Landing page Hero -->
-    <section class="hero is-medium">
+    <section class="hero is-medium is-transparent">
       <div class="hero-head">
         <the-navbar></the-navbar>
         <the-navbar-bis></the-navbar-bis>
@@ -9,7 +9,7 @@
     </section>
 
     <!-- ICO section -->
-    <section class="section is-medium is-end">
+    <section class="section is-medium is-transparent">
       <!-- Container -->
       <div class="container">
         <!-- Divider -->
@@ -38,8 +38,6 @@
                      :class="selectedServiceIndex === index ? 'is-active' : ''">
                   <a @click="choseService(index)">{{ item.title }}</a>
                 </div>
-
-                <div class="slider"></div>
               </div>
             </div>
 
@@ -96,7 +94,6 @@
     import TheNavbar from '../components/TheNavbar.vue'
     import TheNavbarBis from '../components/TheNavbarBis.vue'
     import TheLinksBar from '@/components/TheLinksBar.vue';
-    import worldImage from '../assets/images/illustrations/world.svg'
 
     export default {
         name: 'services',
@@ -108,7 +105,6 @@
 
         data() {
             return {
-                worldImage,
                 services: this.$i18n.t('services').content,
                 selectedServiceIndex: 0,
                 selectedService: this.$i18n.t('services').content[0]

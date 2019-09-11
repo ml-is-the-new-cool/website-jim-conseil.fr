@@ -88,11 +88,11 @@ TABLE OF CONTENTS
         }
         .navbar-menu.is-active {
             &.light-menu {
-                background: #2d0275 !important;
+                background: $primary !important;
             }
         }
         &.is-light.is-dark-mobile {
-            background: #2d0275 !important;
+            background: $primary !important;
         }
     }
     //Lanfing page hero

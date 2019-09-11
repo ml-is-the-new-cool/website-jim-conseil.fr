@@ -8,14 +8,12 @@ export default new Router ({
   mode: 'history',
   base: process.env.BASE_URL,
   linkActiveClass: 'is-active',
-  linkExactActiveClass: 'is-active'
+  linkExactActiveClass: 'is-active',
 
-  /*
-  scrollBehavior (to, from, savedPosition) {
-    if (savedPosition)
-      return savedPosition;
+  scrollBehavior(to, from, savedPosition) {
+    //if (savedPosition)
+    //  return savedPosition;
 
     return { x: 0, y: 0 }
   }
-  */
 })
