@@ -63,10 +63,11 @@
                     </svg>
                     <!-- Sketeched face -->
                     <img class="is-sketch"
-                         src="john.svg" alt="Photo dessinée de l'équipier">
+                         :src="loadPhoto(member.photo)"
+                         alt="Photo dessinée de l'équipier">
                     <!-- Real face -->
                     <img class="is-real"
-                         src="john.jpg" alt="Photo de l'équipier">
+                         :src="loadPhoto(member.photo)" alt="Photo de l'équipier">
                   </div>
                   <!-- Member meta -->
                   <div class="member-info">
@@ -93,10 +94,10 @@
           <div class="divider is-centered is-spacer"></div>
           <!-- Title & subtitle -->
           <h2 class="title is-light is-semibold has-text-centered is-spaced">
-            {{ $t('partners.title') }}
+            {{ $t('university.title') }}
           </h2>
           <h4 class="subtitle is-6 is-light has-text-centered is-compact">
-            {{ $t('partners.description') }}
+            {{ $t('university.description') }}
           </h4>
 
           <!-- Content wrapper -->
@@ -106,10 +107,8 @@
               <div class="column is-10 is-offset-1">
 
                 <!-- Post -->
-                <div v-for="(partner, index) in $t('partners.content')"
-                     :key="partner.title"
-                     class="blog-post">
-                  <a :href="partner.link">
+                <div class="blog-post">
+                  <a :href="$t('university.link')">
                     <!-- Featured image -->
                     <div class="featured-image">
                       <img src="post1.svg" alt="Aix-Marseille Université">
@@ -117,10 +116,10 @@
                     <!-- Content -->
                     <div class="content">
                       <div class="post-title">
-                        {{ partner.name }}
+                        {{ $t('university.name') }}
                       </div>
                       <p>
-                        {{ partner.description }}
+                        {{ $t('university.description') }}
                       </p>
                     </div>
                   </a>
@@ -155,6 +154,12 @@
             TheNavbar,
             TheNavbarBis,
             TheLinksBar
+        },
+
+        methods: {
+            loadPhoto(photoName) {
+                return import(`@/assets/images/team/${photoName}`)
+            },
         },
 
         metaInfo() {

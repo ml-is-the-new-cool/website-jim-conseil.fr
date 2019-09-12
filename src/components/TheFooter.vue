@@ -54,7 +54,11 @@
             </li>
             <br/>
             <li>
-              <a href="">Linkedin</a>
+              <a :href="$t('links.linkedin')" target="_blank">Linkedin</a>
+            </li>
+            <br/>
+            <li>
+              <a>SIREN : {{ $t('links.siren') }}</a>
             </li>
             <br/>
             <router-link :to="$i18nRoute({ name: 'contact' })"

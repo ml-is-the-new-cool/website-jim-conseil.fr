@@ -90,31 +90,28 @@
       {
         "name": "Hippolyte L. DEBERNARDI",
         "position": "Président",
+        "photo": "hippo.jpeg",
         "linkedin": "https://www.linkedin.com/in/hippolyte-debernardi/"
       },
       {
         "name": "Toni GARCIA",
         "position": "Trésorier",
+        "photo": "toni.jpeg",
         "linkedin": "https://www.linkedin.com/in/toni-garcia-2259a115a/"
       },
       {
         "name": "Rachel GLAISE",
         "position": "Secrétaire générale",
+        "photo": "rachel.jpeg",
         "linkedin": "https://www.linkedin.com/in/rachel-glaise-30352a123/"
       }
     ]
   },
 
-  "partners": {
-    "title": "Nos partenaires",
+  "university": {
+    "name": "Aix-Marseille Université",
     "description": "Blablabla",
-    "content": [
-      {
-        "name": "Aix-Marseille Université",
-        "description": "Blablabla",
-        "link": "https://formations.univ-amu.fr/ME5SIN.html"
-      }
-    ]
+    "link": "https://formations.univ-amu.fr/ME5SIN.html"
   },
 
   "services": {
