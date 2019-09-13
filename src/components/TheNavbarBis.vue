@@ -1,6 +1,7 @@
 <template>
   <!-- Cloned navbar that comes in on scroll -->
-  <nav id="navbar-clone" class="navbar is-fixed">
+  <nav :class="{'is-active': isNavBarBisVisible}"
+       class="navbar navbar-clone is-fixed">
     <div class="container">
       <!-- Brand -->
       <div class="navbar-brand">
@@ -12,7 +13,7 @@
             </span>
         </router-link>
         <!-- Responsive toggle -->
-        <span @click.prevent="toggleMenu"
+        <span @click.prevent="activateNavBarBis"
               class="navbar-burger burger">
           <span></span>
           <span></span>
@@ -20,7 +21,7 @@
         </span>
       </div>
       <!-- Menu -->
-      <div v-bind:class="isMenuVisible ? 'is-active' : ''"
+      <div :class="{'is-active' : isNavBarBisActive}"
            class="navbar-menu">
         <div class="navbar-end">
           <!-- Menu item -->
@@ -67,7 +68,7 @@
     import logoImage from '@/assets/images/logo.png'
 
     export default {
-        name: 'the-navbar',
+        name: 'the-navbar-bis',
 
         data() {
             return {
@@ -75,15 +76,34 @@
             }
         },
         computed: {
-            isMenuVisible() {
-                return this.$store.state.menuVisible;
+            isNavBarBisVisible() {
+                return this.$store.state.isNavBarBisVisible;
+            },
+
+            isNavBarBisActive() {
+                return this.$store.state.isNavBarBisActive;
             }
         },
 
         methods: {
-            toggleMenu() {
-                this.$store.commit('showMenu', !this.isMenuVisible);
+            activateNavBarBis() {
+                this.$store.commit('activateNavBarBis', !this.isNavBarBisActive);
+            },
+
+            showNavBarBis(visible) {
+                this.$store.commit('showNavBarBis', visible);
+            },
+
+            onScroll() {
+                this.showNavBarBis(window.scrollY > 60);
             }
+        },
+
+        created() {
+            window.addEventListener("scroll", this.onScroll);
+        },
+        destroyed() {
+            window.removeEventListener("scroll", this.onScroll);
         }
     }
 </script>

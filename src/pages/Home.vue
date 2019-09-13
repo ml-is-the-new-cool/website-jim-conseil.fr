@@ -3,8 +3,8 @@
     <!-- Landing page Hero -->
     <section class="hero is-fullheight is-transparent">
       <div class="hero-head">
-        <the-navbar></the-navbar>
-        <the-navbar-bis></the-navbar-bis>
+        <the-navbar/>
+        <the-navbar-bis/>
       </div>
       <!-- Animated particles -->
       <!-- https://vue-particles.netlify.com -->

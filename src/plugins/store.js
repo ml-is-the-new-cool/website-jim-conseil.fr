@@ -7,7 +7,10 @@ Vue.use(Vuex);
 // each Vuex instance is just a single state tree.
 const state = {
   isNavBarVisible: true,
-  isNavBarActive: false
+  isNavBarActive: false,
+
+  isNavBarBisVisible: false,
+  isNavBarBisActive: false
 };
 
 // mutations are operations that actually mutates the state.
@@ -22,6 +25,14 @@ const mutations = {
 
   showNavBar(state, visible) {
     state.isNavBarVisible = visible;
+  },
+
+  activateNavBarBis(state, activation) {
+    state.isNavBarBisActive = activation;
+  },
+
+  showNavBarBis(state, visible) {
+    state.isNavBarBisVisible = visible;
   }
 };
 
