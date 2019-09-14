@@ -58,15 +58,20 @@
         <div class="column is-4">
           <ul class="footer-links">
             <li>
-              <a :href="$t('links.linkedin')" target="_blank">Linkedin</a>
+              <a :href="$t('links.linkedin')"
+                 target="_blank" rel="noreferrer">
+                Linkedin
+              </a>
             </li>
             <li>
-              <a :href="$t('university.link')" target="_blank">
+              <a :href="$t('university.link')"
+                 target="_blank" rel="noreferrer">
                 {{ $t('university.title') }}
               </a>
             </li>
             <li>
-              <a href="https://avis-situation-sirene.insee.fr/">
+              <a href="https://avis-situation-sirene.insee.fr/"
+                 target="_blank" rel="noreferrer">
                 SIREN : {{ $t('links.siren') }}
               </a>
             </li>
