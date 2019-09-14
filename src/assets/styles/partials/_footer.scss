@@ -84,9 +84,9 @@ TABLE OF CONTENTS
                         -ms-transform-origin: right center;
                         transform-origin: right center;
                         height: 2px;
-                        background: $secondary;
-                        background: -webkit-linear-gradient(to right, $secondary, $secondary-accent) !important;
-                        background: linear-gradient(to right, $secondary, $secondary-accent) !important;
+                        //background: $secondary;
+                        background: -webkit-linear-gradient(to right, $primary, $secondary) !important;
+                        background: linear-gradient(to right, $primary, $secondary) !important;
                         -webkit-transform: scale(0, 1);
                         -ms-transform: scale(0, 1);
                         transform: scale(0, 1);

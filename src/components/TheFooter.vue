@@ -31,10 +31,10 @@
               </router-link>
             </li>
             <li>
-              <router-link :to="$i18nRoute({ name: 'contact' })"
-                           class="is-centered-responsive">
+              <a :href="'mailto:' + $t('links.mail')"
+                 class="is-centered-responsive">
                 {{ $t('links.pages.contact') }}
-              </router-link>
+              </a>
             </li>
             <br/>
             <li>

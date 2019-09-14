@@ -18,8 +18,9 @@
         <h2 class="title is-light is-semibold has-text-centered is-spaced">
           {{ $t('services.title') }}
         </h2>
-        <h4 class="subtitle is-6 is-light has-text-centered is-compact">
-          {{ $t('services.description') }}
+        <h4 v-for="(paragraph) in $t('services.description')"
+            class="subtitle is-6 is-light has-text-centered is-compact">
+          {{ paragraph }}
         </h4>
 
         <!-- Content wrapper -->

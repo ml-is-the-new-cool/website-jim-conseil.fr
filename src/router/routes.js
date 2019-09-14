@@ -27,11 +27,6 @@ export default [
         component: load('About')
       },
       {
-        path: 'contact',
-        name: 'contact',
-        component: load('Contact')
-      },
-      {
         path: 'legals',
         name: 'legals',
         component: load('Legals')

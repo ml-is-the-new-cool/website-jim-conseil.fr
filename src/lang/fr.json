@@ -50,7 +50,7 @@
   },
 
   "about": {
-    "title" : "Qu'est ce que JIM ?",
+    "title" : "Pourquoi faire appel à nous ?",
     "description": [
       "Junior Informatique Marseille - JIM - est une association au service des entreprises gérée par des étudiants du master informatique d’Aix-Marseille Université. Depuis 2018, le master rassemble l’intégralité des spécialités informatiques enseignées dans la région, ce qui nous permet de vous proposer la solution la plus adaptée à vos exigences.",
       "Nous vous offrons un large éventail de services correspondant aux compétences et savoir-faire des élèves : ingénierie du logiciel (site internet, application de bureau ou mobile), sécurité informatique, base de données, nettoyage des données, modélisation et animations 3D, intelligence artificielle et apprentissage automatique, implémentation d’outils relevant du langage naturel, traduction de documents techniques en anglais, étude de marché et de faisabilité pour un projet informatique.",
@@ -86,7 +86,7 @@
 
   "team": {
     "title": "Venez nous rencontrer !",
-    "description": "Blablabla",
+    "description": "",
     "content": [
       {
         "name": "Hippolyte L. DEBERNARDI",
@@ -112,13 +112,15 @@
   "university": {
     "name": "Aix-Marseille Université",
     "title": "Master AMU",
-    "description": "Blablabla",
+    "description": "Depuis 2018, le master rassemble l’intégralité des spécialités informatiques enseignées dans la région, ce qui nous permet de vous proposer la solution la plus adaptée à vos exigences.",
     "link": "https://formations.univ-amu.fr/ME5SIN.html"
   },
 
   "services": {
     "title": "Nos prestations",
-    "description": "Blablabla...",
+    "description": [
+      "Encadrés par l'équipe stratégique de JIM, les étudiants réalisant ces prestations bénéficient de l'expertise des chercheurs et du matériel du laboratoire informatique."
+    ],
     "content": [
       {
         "title": "Données",
@@ -131,47 +133,28 @@
         "title": "Langage naturel",
         "description": "Nous créons pour vous les outils les plus pertinents : traduction automatique ciblée, reconnaissance d’entités, synthèse automatique de texte, reconnaissance automatique de la parole, etc.",
         "objectives": "Réduire votre temps de traitement d’une information relevant du langage naturel.",
-        "projects": [
-          "Chatbox, voicebox",
-          "Traduction ciblée",
-          "Proposition automatique de catégories",
-          "Ontolongie pour un hôpital"
-        ],
+        "projects": "Chatbox, voicebox, Traduction ciblée, Proposition automatique de catégories, Ontolongie pour un hôpital",
         "keywords": "Intelligence artificielle, traduction automatique, synthèse automatique de texte, reconnaissance automatique de la parole."
       },
       {
         "title": "Réseaux et sécurité",
         "description": "Les élèves ingénieurs en sécurité informatique suivent un parcours labellisé SecNumedu délivré par l’ANSSI qui vous garantissent la fiabilité de vos services.",
         "objectives": "Accroître votre confiance en vos infrastructures et logiciels.",
-        "projects": [
-          "Installation d’un proxy, développement d’une architecture JEE.",
-          "Tests d'intrusion",
-          "Sécurisation d'un serveur ou d'un logiciel",
-          "Preuves de programme",
-          "Failles, méthodologie de tests"
-        ],
+        "projects": "Installation d’un proxy, développement d’une architecture JEE, Tests d'intrusion, Sécurisation d'un serveur ou d'un logiciel, Preuves de programme, Failles, méthodologie de tests",
         "keywords": "Sécurité réseau, architecture JEE, failles informatiques, preuves de programme, méthodologie de tests, tests d’intrusion."
       },
       {
         "title": "Applications & logiciels",
         "description": "Vous avez une idée, un concept, un process à développer ? Parlons-en ensemble, nous vous proposons tout type de solution technique : module pour un logiciel existant, architecture orientée données (Cloud, SOA, Business process), conception et réalisation d'applications, exploiter les données hétérogènes et multi-sources. Big Data, XML, NoSQL. Optimisation & implémentation d'un algorithme connu, Parallélisation d'un algorithme. Algorithme à performances garanties.",
         "objectives": "Concrétisez vos idées & concepts par une solution informatique.",
-        "projects": [
-          "Logiciel de gestion interne à votre entreprise",
-          "Logiciel commercial",
-          "Module pour votre logiciel déjà existant"
-        ],
+        "projects": "Logiciel de gestion interne à votre entreprise, Logiciel commercial, Module pour votre logiciel déjà existant",
         "keywords": "Développement, communication technique"
       },
       {
         "title": "Développement WEB",
-        "text": "Création de site WEB aussi bien vitrine que commercial et aide pour le référencement sur les moteurs de recherche.",
+        "description": "Création de site WEB aussi bien vitrine que commercial et aide pour le référencement sur les moteurs de recherche.",
         "objectives": "Permettre une meilleure visibilité pour votre entreprise ou votre association.",
-        "projects": [
-          "Réalisation d'un site web responsive",
-          "Réalisation d'un site web sur le modèle applicatif (SPA)",
-          "Publicité & référencement"
-        ],
+        "projects": "Réalisation d'un site web responsive, Réalisation d'un site web sur le modèle applicatif (SPA), Publicité & référencement",
         "keywords": "Visibilité, start-up, publicité"
       },
       {
