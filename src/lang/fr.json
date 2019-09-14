@@ -13,12 +13,13 @@
       "contact": "Restons en contact !",
       "leaflet": "Plaquette",
       "legals": "Mentions légales",
+      "membership": "Formulaire d'adhésion",
       "notFound": "Erreur 404"
     },
     "address": [
+      "UFR Sciences",
       "163, avenue de Luminy ",
-      "13009 Marseille 9 ",
-      "UFR Sciences"
+      "13009 Marseille 9 "
     ],
     "linkedin": "https://www.linkedin.com/company/jim-conseil",
     "mail": "contact@jim-conseil.fr",
@@ -110,6 +111,7 @@
 
   "university": {
     "name": "Aix-Marseille Université",
+    "title": "Master AMU",
     "description": "Blablabla",
     "link": "https://formations.univ-amu.fr/ME5SIN.html"
   },

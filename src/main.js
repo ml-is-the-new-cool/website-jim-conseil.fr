@@ -5,6 +5,7 @@ import store from './plugins/store';
 import { i18n } from './plugins/i18n';
 import { Trans } from './plugins/Translation';
 import VueMeta from 'vue-meta';
+
 import './registerServiceWorker';              // spa support
 import AOS from 'aos';                         // https://michalsnik.github.io/aos/
 import 'aos/dist/aos.css';

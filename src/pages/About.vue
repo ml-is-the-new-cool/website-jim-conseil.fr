@@ -38,36 +38,8 @@
                 <div class="dark-card">
                   <!-- Avatar wrapper -->
                   <div class="avatar">
-                    <!-- Svg circle -->
-                    <svg class="circle-chart"
-                         viewbox="0 0 33.83098862 33.83098862"
-                         width="140"
-                         height="140"
-                         xmlns="http://www.w3.org/2000/svg">
-                      <!-- Track -->
-                      <circle class="circle-chart-background"
-                              stroke-width="1"
-                              fill="none"
-                              cx="16.91549431"
-                              cy="16.91549431"
-                              r="15.91549431" />
-                      <!-- Stroke -->
-                      <circle class="circle-chart-circle"
-                              stroke-width="1"
-                              stroke-dasharray="33,100"
-                              stroke-linecap="round"
-                              fill="none"
-                              cx="16.91549431"
-                              cy="16.91549431"
-                              r="15.91549431" />
-                    </svg>
-                    <!-- Sketeched face -->
-                    <img class="is-sketch"
-                         :src="loadPhoto(member.photo)"
-                         alt="Photo dessinée de l'équipier">
-                    <!-- Real face -->
-                    <img class="is-real"
-                         :src="loadPhoto(member.photo)" alt="Photo de l'équipier">
+                    <img :src="require(`@/assets/images/team/${member.photo}`)"
+                         :alt="member.name">
                   </div>
                   <!-- Member meta -->
                   <div class="member-info">
@@ -111,7 +83,7 @@
                   <a :href="$t('university.link')">
                     <!-- Featured image -->
                     <div class="featured-image">
-                      <img src="post1.svg" alt="Aix-Marseille Université">
+                      <img :src="amuImage" alt="Aix-Marseille Université">
                     </div>
                     <!-- Content -->
                     <div class="content">
@@ -137,35 +109,33 @@
     </section>
     <!-- /Company section -->
 
-    <the-links-bar/>
-
   </div>
 </template>
 
 <script>
     import TheNavbar from '@/components/TheNavbar.vue';
     import TheNavbarBis from '@/components/TheNavbarBis.vue';
-    import TheLinksBar from '@/components/TheLinksBar.vue';
+
+    import amuImage from '../assets/images/logos/amu.jpg';
 
     export default {
         name: 'about',
 
         components: {
             TheNavbar,
-            TheNavbarBis,
-            TheLinksBar
+            TheNavbarBis
         },
 
-        methods: {
-            loadPhoto(photoName) {
-                return import(`@/assets/images/team/${photoName}`)
-            },
+        data() {
+            return {
+                amuImage
+            }
         },
 
         metaInfo() {
             return {
                 title: this.$i18n.t('links.pages.about'),
             }
-        },
+        }
     }
 </script>

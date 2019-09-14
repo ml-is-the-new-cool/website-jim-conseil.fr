@@ -32,11 +32,6 @@ export default [
         component: load('Contact')
       },
       {
-        path: 'leaflet',
-        name: 'leaflet',
-        component: load('Leaflet')
-      },
-      {
         path: 'legals',
         name: 'legals',
         component: load('Legals')

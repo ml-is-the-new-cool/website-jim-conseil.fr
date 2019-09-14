@@ -16,19 +16,13 @@ TABLE OF CONTENTS
 ========================================================================== */
 
 .krypton-footer {
-    padding: 100px 40px;
-    background: #1b2040;
+    padding: 40px 40px;
+    background: $primary;
     text-align: center;
     position: relative;
-    //Solar system background
-    .solar-system {
-        position: absolute;
-        top: 0;
-        right: 0;
-        max-width: 50%;
-        z-index: 0;
-    }
+    // border-top: $secondary;
     //Footer logo
+
     .footer-logo {
         img {
             height: 75px;
@@ -39,14 +33,14 @@ TABLE OF CONTENTS
             font-weight: 600;
             color: $white;
             padding: 5px 0;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             letter-spacing: 3px;
         }
         //Motto
         .brand-subtitle {
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: .65rem;
+            font-size: 0.8rem;
             color: $secondary;
         }
     }
@@ -55,23 +49,22 @@ TABLE OF CONTENTS
         padding: 40px 0;
         position: relative;
         z-index: 1;
-        //Subscribe form
-        .subscribe-block {
-            //Title
-            .subscribe-title {
-                padding: 10px 0;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                font-size: .55rem;
-                color: $secondary;
-            }
+
+        p {
+            font-weight: 500;
+            font-size: .8rem;
+            color: $white;
+            position: relative;
+            text-transform: uppercase;
         }
+
         //Navigation links
         .footer-links {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+
             //Link element
             li {
                 a {
@@ -123,15 +116,5 @@ TABLE OF CONTENTS
         color: $secondary;
         font-size: .85rem;
         z-index: 2;
-    }
-    //Coded by section
-    .coded-by {
-        position: relative;
-        color: $white;
-        font-size: .7rem;
-        z-index: 2;
-        a {
-            color: $secondary;
-        }
     }
 }

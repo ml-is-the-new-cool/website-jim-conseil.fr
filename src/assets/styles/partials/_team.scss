@@ -27,7 +27,7 @@ TABLE OF CONTENTS
         padding: 20px 0;
         text-shadow: 0 2px 4px rgba(4,27,99,.25);
         background: rgba(17,149,247,.08);
-        border: 1px solid rgba(0,83,251,.5);
+        border: 1px solid $primary;//rgba(0,83,251,.5);
         -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.16);
         box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.16);
         position: relative;
@@ -59,7 +59,6 @@ TABLE OF CONTENTS
                 position: absolute;
                 width: 100px;
                 height: 100px;
-                left: 0;
                 right: 0;
                 top: 50%;
                 left: 50%;
@@ -79,7 +78,7 @@ TABLE OF CONTENTS
         //Hover state
         &:hover {
             background: rgba(17,149,247,.06);
-            border: 1px solid rgba(0,83,251,.8);
+            border: 1px solid $secondary;//rgba(0,83,251,.8);
             -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.24);
             box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.24);
             //Circle hover state
@@ -105,13 +104,13 @@ TABLE OF CONTENTS
                 text-transform: uppercase;
                 font-family: 'Open Sans', sans-serif;
                 font-size: .75rem;
-                color: $primary;
+                color: $secondary;
             }
             //Description
             .description {
                 font-size: .8rem;
                 padding: 10px 20px;
-                color: rgba(94,147,255,.9);
+                color: $white;//rgba(94,147,255,.9);
             }
         }
     }

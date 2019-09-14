@@ -3,8 +3,8 @@
     <!-- Landing page Hero -->
     <section class="hero is-medium is-transparent">
       <div class="hero-head">
-        <the-navbar></the-navbar>
-        <the-navbar-bis></the-navbar-bis>
+        <the-navbar/>
+        <the-navbar-bis/>
       </div>
     </section>
 
@@ -85,23 +85,19 @@
       <!-- /Container -->
     </section>
     <!-- /ICO section -->
-
-    <the-links-bar/>
   </div>
 </template>
 
 <script>
     import TheNavbar from '../components/TheNavbar.vue'
     import TheNavbarBis from '../components/TheNavbarBis.vue'
-    import TheLinksBar from '@/components/TheLinksBar.vue';
 
     export default {
         name: 'services',
 
         components: {
             TheNavbar,
-            TheNavbarBis,
-            TheLinksBar
+            TheNavbarBis
         },
 
         metaInfo() {
@@ -125,5 +121,4 @@
             }
         },
     }
-
 </script>

@@ -9,7 +9,7 @@
     </section>
 
     <!-- Contact section -->
-    <section class="section is-medium is-darkest">
+    <section class="section is-medium is-transparent">
       <!-- Container -->
       <div class="container">
         <!-- Divider -->

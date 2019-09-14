@@ -1,17 +1,13 @@
 <template>
   <!-- Static navbar -->
   <div class="hero-head">
-    <nav class="navbar is-light is-transparent">
+    <nav class="navbar is-light">
       <div class="container">
         <!-- Brand -->
         <div class="navbar-brand">
           <router-link :to="$i18nRoute({ name: 'home' })"
-                       class="navbar-item">
+                       class="">
             <img class="" :src="logoImage" alt="JIM">
-
-            <span class="brand-name mobile">
-              Junior Informatique <br/> Marseille
-            </span>
           </router-link>
           <!-- Responsive toggle -->
           <span @click.prevent="activateNavBar"
@@ -23,15 +19,26 @@
         </div>
         <!-- Menu -->
         <div v-bind:class="isNavBarActive ? 'is-active' : ''"
-             class="navbar-menu">
+             class="navbar-menu has-text-centered"
+             >
           <div class="navbar-end">
             <!-- Menu item -->
             <div class="navbar-item is-nav-link">
+              <router-link :to="$i18nRoute({ name: 'home' })"
+                           exact
+                           class="is-centered-responsive">
+                {{ $t('links.pages.home') }}
+              </router-link>
+            </div>
+            <!-- Menu item -->
+            <div class="navbar-item is-nav-link">
               <router-link :to="$i18nRoute({ name: 'services' })"
+                           exact
                            class="is-centered-responsive">
                 {{ $t('links.pages.services') }}
               </router-link>
             </div>
+
             <!-- Menu item -->
             <div class="navbar-item is-nav-link">
               <router-link :to="$i18nRoute({ name: 'about' })"
@@ -39,9 +46,11 @@
                 {{ $t('links.pages.about') }}
               </router-link>
             </div>
+
             <!-- Menu item -->
             <div class="navbar-item is-nav-link">
               <router-link :to="$i18nRoute({ name: 'contact' })"
+                           exact
                            class="is-centered-responsive">
                 {{ $t('links.pages.contact') }}
               </router-link>
@@ -49,8 +58,22 @@
             <!-- Leaflet button -->
             <div class="navbar-item">
               <router-link :to="$i18nRoute({ name: 'leaflet' })"
+                           exact
                            class="button k-button k-primary raised has-gradient slanted">
-                <span class="text">{{ $t('links.pages.leaflet') }}</span>
+                <span class="text">
+                  {{ $t('links.pages.leaflet') }}
+                </span>
+                <span class="front-gradient"></span>
+              </router-link>
+            </div>
+            <!-- Membership button -->
+            <div class="navbar-item">
+              <router-link :to="$i18nRoute({ name: 'membership' })"
+                           exact
+                           class="button k-button k-primary raised has-gradient slanted">
+                <span class="text">
+                  {{ $t('links.pages.membership') }}
+                </span>
                 <span class="front-gradient"></span>
               </router-link>
             </div>
@@ -63,7 +86,7 @@
 </template>
 
 <script>
-    import logoImage from '@/assets/images/logo.png'
+    import logoImage from '@/assets/images/logos/logo.png'
 
     export default {
         name: 'the-navbar',
