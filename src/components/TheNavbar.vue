@@ -19,41 +19,42 @@
         </div>
         <!-- Menu -->
         <div v-bind:class="isNavBarActive ? 'is-active' : ''"
-             class="navbar-menu has-text-centered"
-        >
+             class="navbar-menu has-text-centered">
           <div class="navbar-end">
             <!-- Menu item -->
-            <div class="navbar-item is-nav-link">
-              <router-link :to="$i18nRoute({ name: 'home' })"
-                           exact
-                           class="is-centered-responsive">
+            <router-link :to="$i18nRoute({ name: 'home' })"
+                         exact
+                         class="is-centered-responsive">
+              <div class="navbar-item is-nav-link">
                 {{ $t('links.pages.home') }}
-              </router-link>
-            </div>
+              </div>
+            </router-link>
+
             <!-- Menu item -->
-            <div class="navbar-item is-nav-link">
-              <router-link :to="$i18nRoute({ name: 'services' })"
-                           exact
-                           class="is-centered-responsive">
+            <router-link :to="$i18nRoute({ name: 'services' })"
+                         exact
+                         class="is-centered-responsive">
+              <div class="navbar-item is-nav-link">
                 {{ $t('links.pages.services') }}
-              </router-link>
-            </div>
+              </div>
+            </router-link>
 
             <!-- Menu item -->
-            <div class="navbar-item is-nav-link">
-              <router-link :to="$i18nRoute({ name: 'about' })"
-                           class="is-centered-responsive">
+            <router-link :to="$i18nRoute({ name: 'about' })"
+                         class="is-centered-responsive">
+              <div class="navbar-item is-nav-link">
                 {{ $t('links.pages.about') }}
-              </router-link>
-            </div>
+              </div>
+            </router-link>
 
             <!-- Menu item -->
-            <div class="navbar-item is-nav-link">
-              <a :href="'mailto:' + $t('links.mail')"
-                 class="is-centered-responsive">
+            <a :href="'mailto:' + $t('links.mail')"
+               class="is-centered-responsive">
+              <div class="navbar-item is-nav-link">
                 {{ $t('links.pages.contact') }}
-              </a>
-            </div>
+              </div>
+            </a>
+
             <!-- Leaflet button -->
             <div class="navbar-item">
               <a @click.prevent="leaflet"

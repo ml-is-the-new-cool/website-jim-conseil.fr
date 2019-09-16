@@ -107,16 +107,25 @@ body {
             }
             //Nav link modifier
             &.is-nav-link {
-                a {
-                    //font-family: 'Cabin', sans-serif;
-                    text-transform: uppercase;
-                    font-size: .75rem;
-                }
-            }
-            a.is-active {
-                color: $secondary !important;
+                //font-family: 'Cabin', sans-serif;
+                text-transform: uppercase;
+                font-size: .75rem;
             }
         }
+
+        // navbar links color when active
+        div.container {
+            div.navbar-menu {
+                div.navbar-end {
+                    a.is-active {
+                        div {
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+
         //Color modifiers
         &.is-light, &.is-dark {
             .navbar-brand {
@@ -128,9 +137,7 @@ body {
                 }
             }
             .navbar-item {
-                a {
-                    color: $white;
-                }
+                color: $white;
             }
             .navbar-burger span {
                 //width: 30px;
@@ -170,7 +177,7 @@ body {
                 }
                 .navbar-menu {
                     &.is-active {
-                        background: #2d0275 !important;
+                        background: $primary !important;
                     }
                 }
             }
