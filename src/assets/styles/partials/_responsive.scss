@@ -155,3 +155,19 @@ TABLE OF CONTENTS
 @media (max-width: 768px) {
 
 }
+
+@media (min-width: 1000px) {
+    .hero {
+        .navbar {
+            div.container {
+                div.navbar-menu {
+                    div.navbar-end {
+                        .is-nav-link {
+                            padding-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

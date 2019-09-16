@@ -37,8 +37,8 @@ const Trans = {
    */
   getUserLang () {
     const lang = window.navigator.language ||
-                 window.navigator.userLanguage ||
-                 Trans.defaultLanguage;
+        window.navigator.userLanguage ||
+        Trans.defaultLanguage;
 
     return {
       lang: lang,
@@ -93,6 +93,12 @@ const Trans = {
    * @return {*}
    */
   routeMiddleware (to, from, next) {
+    //import { store } from './store.js';
+    //store.mutations.showNavBar(false);
+    //store.mutations.activateNavBar(false);
+    //store.mutations.showNavBarBis(false);
+    //store.mutations.activateNavBarBis(false);
+
     // Load async message files here
     const lang = to.params.lang;
     //document.title = to.meta.title;

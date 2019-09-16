@@ -11,6 +11,7 @@
           </router-link>
           <!-- Responsive toggle -->
           <span @click.prevent="activateNavBar"
+                :class="{'is-active' : isNavBarActive}"
                 class="navbar-burger burger">
             <span></span>
             <span></span>
@@ -18,7 +19,7 @@
         </span>
         </div>
         <!-- Menu -->
-        <div v-bind:class="isNavBarActive ? 'is-active' : ''"
+        <div :class="{'is-active' : isNavBarActive}"
              class="navbar-menu has-text-centered">
           <div class="navbar-end">
             <!-- Menu item -->

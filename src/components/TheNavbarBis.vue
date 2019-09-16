@@ -11,6 +11,7 @@
         </router-link>
         <!-- Responsive toggle -->
         <span @click.prevent="activateNavBarBis"
+              :class="{'is-active' : isNavBarBisActive}"
               class="navbar-burger burger">
           <span></span>
           <span></span>

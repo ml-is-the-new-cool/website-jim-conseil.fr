@@ -172,5 +172,10 @@
         "keywords": "Maillage, 3D, OpenMesh, Algorithme"
       }
     ]
+  },
+
+  "notfound":{
+    "title": "Page inconnue !",
+    "text": ""
   }
 }

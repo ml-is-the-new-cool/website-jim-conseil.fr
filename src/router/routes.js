@@ -5,11 +5,24 @@ function load (component) {
   return () => import(/* webpackChunkName: "[request]" */`@/pages/${component}.vue`)
 }
 
+/*
+function deactivateNavbars(to, from, next) {
+  console.log('entered');
+  this.$store.commit('activateNavBar', false);
+  this.$store.commit('activateNavBarBis', false);
+  this.$store.commit('showNavBar', false);
+  this.$store.commit('showNavBarBis', false);
+
+  next();
+}
+*/
+
 export default [
   {
     path: '/:lang',
     component: TheContent,
     beforeEnter: Trans.routeMiddleware,
+    //beforeRouteUpdate: deactivateNavbars,
     children: [
       {
         path: '',
