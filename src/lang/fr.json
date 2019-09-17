@@ -175,7 +175,7 @@
   },
 
   "notfound":{
-    "title": "Page inconnue !",
+    "title": "<Page inconnue/>",
     "text": ""
   }
 }

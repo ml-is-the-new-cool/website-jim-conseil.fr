@@ -1,39 +1,51 @@
 <template>
   <div class="dark-wrapper">
     <!-- Landing page Hero -->
-    <section class="hero is-transparent">
+    <section class="hero is-fullheight is-transparent">
       <div class="hero-head">
         <the-navbar/>
+        <the-navbar-bis/>
       </div>
-    </section>
 
-    <!-- Contact section -->
-    <section class="section is-medium is-transparent">
-      <!-- Container -->
-      <div class="container">
-        <!-- Divider -->
-        <div class="divider is-centered"></div>
-        <!-- Title & subtitle -->
-        <h2 class="title is-light is-semibold has-text-centered is-spaced">
-          {{ $t('notfound.title') }}
-        </h2>
-        <h4 class="subtitle is-6 is-light has-text-centered is-compact">
-          {{ $t('notfound.text') }}
-        </h4>
+      <!-- Hero Image and Title -->
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+
+            <!-- Landing page Title -->
+            <div class="column landing-caption has-text-centered">
+              <h1 class="title is-light main-title">
+                {{ $t('notfound.title') }}
+              </h1>
+              <h2 class="subtitle is-light is-thin">
+                {{ $t('notfound.text') }}
+              </h2>
+              <!-- CTA -->
+              <!--p>
+                <a href="#start" class="button k-button k-primary raised has-gradient is-fat is-bold">
+                  <span class="text"></span>
+                  <span class="front-gradient"></span>
+                </a>
+              </p-->
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- Contact section -->
   </div>
 </template>
 
 <script>
     import TheNavbar from '../components/TheNavbar.vue';
+    import TheNavbarBis from '../components/TheNavbarBis.vue';
 
     export default {
         name: 'not-found',
 
         components: {
-            TheNavbar
+            TheNavbar,
+            TheNavbarBis
         },
 
         metaInfo() {

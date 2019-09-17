@@ -81,7 +81,7 @@
               </a>
             </li>
             <br/>
-            <a href="./pdf/plaquette.pdf" target="_blank"
+            <a href="./plaquette.pdf" target="_blank"
                class="button k-button k-primary raised has-gradient is-fat is-bold">
                 <span class="text">
                   {{ $t('links.pages.leaflet') }}
@@ -89,7 +89,7 @@
               <span class="front-gradient"></span>
             </a>
             <br/>
-            <a @click.prevent="leaflet"
+            <a href="./adhesion.pdf" target="_blank"
                class="button k-button k-primary raised has-gradient is-fat is-bold">
                 <span class="text">
                   {{ $t('links.pages.membership') }}
@@ -105,24 +105,3 @@
     </div>
   </footer>
 </template>
-
-<script>
-    /*
-      let downloadUrl = "https://example.org/image.png";
-
-      let downloading = browser.downloads.download({
-          url : downloadUrl,
-          filename : 'my-image-again.png',
-          conflictAction : 'uniquify'
-      });
-
-     */
-
-    export default {
-        data() {
-            return {
-                leaflet: '' //require('../../public/pdf/plaquette.pdf')
-            }
-        },
-    }
-</script>

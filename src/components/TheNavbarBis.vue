@@ -58,7 +58,7 @@
 
           <!-- Leaflet button -->
           <div class="navbar-item">
-            <a @click.prevent="leaflet"
+            <a href="./plaquette.pdf" target="_blank"
                class="button k-button k-primary raised has-gradient slanted">
                 <span class="text">
                   {{ $t('links.pages.leaflet') }}
@@ -68,7 +68,7 @@
           </div>
           <!-- Membership button -->
           <div class="navbar-item">
-            <a @click.prevent="leaflet"
+            <a href="./adhesion.pdf" target="_blank"
                class="button k-button k-primary raised has-gradient slanted">
                 <span class="text">
                   {{ $t('links.pages.membership') }}
@@ -91,8 +91,7 @@
 
         data() {
             return {
-                logoImage,
-                leaflet: ''
+                logoImage
             }
         },
         computed: {
