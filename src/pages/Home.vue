@@ -55,34 +55,32 @@
             <br/>
           </div>
         </div>
+
+        <!-- Key numbers -->
+      <div class="container">
+        <div class="columns is-vcentered">
+          <!-- Feature -->
+          <div v-for="(one_key_number, index) in $t('key_numbers.content')"
+               :key="index"
+               class="column is-3 has-text-centered">
+            <div data-aos="fade-up" :data-aos-delay="200*index"
+                 data-aos-offset="200" data-aos-easing="ease-out-quart"
+                 class="feature">
+              <h1 class="title is-tight is-light">
+                {{ one_key_number.number }}
+              </h1>
+              <h4 class="title is-6 is-tight is-light">
+                {{ one_key_number.title }}
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
     <!-- /Side Features section -->
 
-    <!-- Key numbers -->
-    <div class="divider is-centered"></div>
-    <div class="content-wrapper is-large container">
-      <div class="columns is-vcentered">
-        <!-- Feature -->
-        <div v-for="(one_key_number, index) in $t('key_numbers.content')"
-             :key="index"
-             class="column is-3 has-text-centered">
-          <div data-aos="fade-up" :data-aos-delay="200*index"
-               data-aos-offset="200" data-aos-easing="ease-out-quart"
-               class="feature">
-            <h1 class="title is-tight is-light">
-              {{ one_key_number.number }}
-            </h1>
-            <h4 class="title is-6 is-tight is-light">
-              {{ one_key_number.title }}
-            </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Methodology section -->
-
     <div class="roadmap-wrapper">
       <section class="main-timeline">
         <div class="container">
