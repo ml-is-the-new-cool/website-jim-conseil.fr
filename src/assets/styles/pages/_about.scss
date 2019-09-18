@@ -1,0 +1,441 @@
+/*! _blog.styles | Krypton | Kit 1 | CSS Ninja */
+
+/* ==========================================================================
+Blog Posts
+========================================================================== */
+
+/***
+TABLE OF CONTENTS
+=============================================================================
+0. Landing page blog posts
+=============================================================================
+***/
+
+/* ==========================================================================
+0. Landing page blog posts
+========================================================================== */
+
+//Post item
+.blog-post {
+    //featured image
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .featured-image {
+        width: 35%;
+        object-fit: cover;
+        margin-right: 50px;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+    }
+    //Link style
+    a {
+        display: flex;
+        padding: 50px;
+        overflow: hidden;
+        align-items: center;
+        max-width: 1000px;
+        margin: auto;
+        color: #333;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        &:hover {
+            box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+        }
+    }
+    //Content
+    .content {
+        width: 65%;
+        //Post title
+        .post-title {
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            color:$white;
+            font-weight: 500;
+            font-family: 'Cabin', sans-serif;
+            //Date
+            .blog-date {
+                font-size: 12px;
+                margin-left: 20px;
+                color: $white;
+                font-family: 'Cabin', sans-serif;
+                &:before {
+                    content: '|';
+                    color: #2bb673;
+                    font-size: 25px;
+                    top: auto;
+                    position: relative;
+                    margin-right: 10px;
+                }
+            }
+        }
+        //Separator
+        .rounded {
+            width: 70px;
+            height: 3px;
+            border-radius: 6px;
+            background-image: linear-gradient(to right, #25aae1, #40e495);
+            margin-left: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        //Post meta
+        .post-meta {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            //Author
+            .author-block {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                img {
+                    border-radius: 50%;
+                }
+                .author-name {
+                    font-size: .75rem;
+                    font-family: 'Cabin', sans-serif;
+                    color: $white;
+                    padding: 0 10px;
+                    span {
+                        display: block;
+                        &:nth-child(2) {
+                            color: $secondary;
+                            small {
+                                color: $white !important;
+                            }
+                        }
+                    }
+                }
+            }
+            //Comments and likes count
+            .stats-block {
+                margin-left: auto;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .comments, .likes {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0 5px;
+                    svg {
+                        width: 16px;
+                        height: 16px;
+                        stroke: $white;
+                        stroke-width: 1.4px;
+                        cursor: pointer;
+                        transition: all .3s;
+                    }
+                    span {
+                        color: $white;
+                        padding: 0 2px;
+                        font-size: .75rem;
+                    }
+                }
+                .likes {
+                    svg {
+                        fill: $red;
+                        stroke: $red;
+                    }
+                }
+            }
+        }
+    }
+    p {
+        color: $white; //rgba(94,147,255,.9);
+    }
+}
+
+//Specific Media queries for blog posts
+@media screen and (max-width: 768px){
+    .blog-post {
+        width: 92%;
+        margin: auto;
+        a {
+            display: block;
+            padding: 10px;
+        }
+        .content {
+            width: 100%;
+            margin-top: 35px;
+            .post-title {
+                font-size: 18px;
+                .blog-date {
+                    margin: 0;
+                }
+            }
+        }
+        .featured-image {
+            width: 100%;
+            img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+3. Flying tabs
+========================================================================== */
+
+//Container
+.flying-tabs-container {
+    //max-width: 560px;
+    margin: 0 auto;
+
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    overflow: hidden !important;
+
+    //tabs
+    .flying-tabs {
+        border: 1px solid $secondary;
+        //tab-item
+        .flying-child {
+            //display: inline;
+            text-align: center;
+            &.is-active a {
+                color: $secondary !important;
+            }
+            flex: 1 !important;
+        }
+        //link element
+        a {
+            // font-family: 'Cabin', sans-serif;
+            //display: inline-block;
+            border: 1px solid $secondary;
+            flex: 1 !important;
+            width: 24.4%;
+            padding: .75rem 0;
+            color: $white;
+            transition: all .3s;
+            &:hover {
+                color: lighten($secondary, 15%);
+            }
+        }
+    }
+}
+
+//Tab content
+.tab-content {
+    display: none;
+    min-height: 312px;
+    margin-top: 40px;
+    //Active state
+    &.is-active {
+        display: block;
+    }
+    //Side image
+    img {
+        height: 320px;
+        animation-delay: .3s;
+    }
+    //Countdown card
+    .ico-card {
+        width: 100%;
+        @include primary-gradient-right();
+        color: $white;
+        padding: 30px 40px;
+        border-radius: 6px;
+        animation-delay: .3s;
+        //Progress bar
+        .progress-block {
+            .progress-tags {
+                display: flex;
+                padding: 20px 30px;
+                div {
+                    position: relative;
+                    text-align: right;
+                    // font-family: 'Cabin', sans-serif;
+                    font-size: .65rem;
+                    text-transform: uppercase;
+                    &:before {
+                        content: '';
+                        height: 26px;
+                        width: 1px;
+                        background: $smoke-white;
+                        position: absolute;
+                        top: 25px;
+                        right: 0px;
+                        transform: translateX(50%);
+
+                    }
+                    &:first-child, &:nth-child(2) {
+                        flex-grow: 2;
+                    }
+                    &:nth-child(3) {
+                        flex-grow: 1;
+                    }
+                }
+            }
+            //Color
+            progress {
+                &.ico-progress {
+                    &::-webkit-progress-value {
+                        @include secondary-gradient-right();
+                    }
+                    &::-moz-progress-bar {
+                        @include secondary-gradient-right();
+                    }
+                    &::-ms-fill {
+                        @include secondary-gradient-right();
+                    }
+                }
+            }
+        }
+        //Button
+        .button-block {
+            text-align: center;
+            margin: 20px 0 10px 0;
+            padding: 0 15%;
+        }
+        //Icons
+        .icon-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 0;
+            i {
+                margin: 0 5px;
+                color: $smoke-white;
+            }
+        }
+    }
+    //Text content
+    .text-content {
+        p {
+            animation-delay: .15s;
+        }
+        //Bullet list
+        .custom-bullet-list {
+            li::before {
+                content: "೦ ";
+                color: $secondary;
+            }
+            li {
+                padding: 10px 0;
+                color: $white;
+                // font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+                &:first-child {
+                    animation-delay: .15s;
+                }
+                &:nth-child(2) {
+                    animation-delay: .2s;
+                }
+                &:nth-child(3) {
+                    animation-delay: .25s;
+                }
+                span {
+                    &:first-child {
+                        // font-family: 'Cabin', sans-serif;
+                    }
+                    &.item-content {
+                        margin: 0 16px !important;
+                        font-size: 90%;
+                        // font-family: 'Open Sans', sans-serif;
+                        font-weight: 300;
+                        color: #e8e8e8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+4. Team members
+========================================================================== */
+
+.team-member-container {
+    position: relative;
+    //Team member card
+    .dark-card {
+        width: 100%;
+        border-radius: 1px;
+        color: $white;
+        transition: all .4s;
+        padding: 20px 0;
+        text-shadow: 0 2px 4px rgba(4,27,99,.25);
+        background: rgba(17,149,247,.08);
+        border: 1px solid $primary;//rgba(0,83,251,.5);
+        -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.16);
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.16);
+        position: relative;
+        z-index: 2;
+        //Avatar wrapper
+        .avatar {
+            text-align: center;
+            position: relative;
+            height: 160px;
+            padding: 10px 0;
+            //Member photo
+            img {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                right: 0;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                transition: all .5s;
+            }
+        }
+        //Hover state
+        &:hover {
+            background: rgba(17,149,247,.06);
+            border: 1px solid $secondary;//rgba(0,83,251,.8);
+            -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.24);
+            box-shadow: 0 2px 3px 0 rgba(0,0,0,.5), 0 0 25px 0 rgba(18,60,255,.24);
+            //Circle hover state
+            .avatar .circle-chart .circle-chart-circle{
+                stroke-dasharray:  100, 100;
+                stroke: $secondary;
+            }
+            //Member photo toggle
+            img {
+                &.is-real {
+                    opacity: 1;
+                }
+                &.is-sketch {
+                    opacity: 0;
+                }
+            }
+        }
+        //Member meta
+        .member-info {
+            text-align: center;
+            //position in company
+            .position {
+                text-transform: uppercase;
+                font-family: 'Open Sans', sans-serif;
+                font-size: .75rem;
+                color: $secondary;
+
+                a {
+                    font-size: .8rem;
+                    padding: 10px 20px;
+                    color: $white;//rgba(94,147,255,.9);
+                }
+            }
+        }
+    }
+}

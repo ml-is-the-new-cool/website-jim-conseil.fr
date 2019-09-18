@@ -1,7 +1,7 @@
 <template>
   <div class="dark-wrapper">
     <!-- Landing page Hero -->
-    <section class="hero is-fullheight is-transparent">
+    <section class="hero is-fullheight landing-background">
       <div class="hero-head">
         <the-navbar/>
         <the-navbar-bis/>
@@ -13,7 +13,6 @@
       <div class="hero-body">
         <div class="container">
           <div class="columns is-vcentered">
-
             <!-- Landing page Title -->
             <div class="column landing-caption has-text-centered">
               <h1 class="title is-light main-title">
@@ -29,7 +28,6 @@
                   <span class="front-gradient"></span>
                 </a>
               </p-->
-
             </div>
           </div>
         </div>
@@ -48,16 +46,40 @@
         <h2 class="title is-light is-semibold has-text-centered is-spaced">
           {{ $t('about.title') }}
         </h2>
-        <div v-for="(paragraph) in $t('about.description')"
-             :key="paragraph">
-          <h4 class="subtitle is-6 is-light has-text-centered is-compact">
-            {{ paragraph }}
-          </h4>
-          <br/>
+        <div class="columns is-multiline">
+          <div v-for="(paragraph) in $t('about.description')"
+               :key="paragraph" class="column is-offset-2 is-8">
+            <h4 class="subtitle is-6 is-light has-text-centered">
+              {{ paragraph }}
+            </h4>
+            <br/>
+          </div>
         </div>
       </div>
     </section>
     <!-- /Side Features section -->
+
+    <!-- Key numbers -->
+    <div class="divider is-centered"></div>
+    <div class="content-wrapper is-large container">
+      <div class="columns is-vcentered">
+        <!-- Feature -->
+        <div v-for="(one_key_number, index) in $t('key_numbers.content')"
+             :key="index"
+             class="column is-3 has-text-centered">
+          <div data-aos="fade-up" :data-aos-delay="200*index"
+               data-aos-offset="200" data-aos-easing="ease-out-quart"
+               class="feature">
+            <h1 class="title is-tight is-light">
+              {{ one_key_number.number }}
+            </h1>
+            <h4 class="title is-6 is-tight is-light">
+              {{ one_key_number.title }}
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Methodology section -->
 

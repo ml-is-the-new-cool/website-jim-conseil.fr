@@ -34,7 +34,9 @@ TABLE OF CONTENTS
     }
     //Hover raised modifier
     &.raised:hover {
-        box-shadow: 0 14px 26px -12px rgba(0, 0, 0, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2) !important;
+        box-shadow: 0 14px 26px -12px rgba(0, 0, 0, 0.42),
+                    0 4px  23px  0px  rgba(0, 0, 0, 0.12),
+                    0 8px  10px -5px  rgba(0, 0, 0, 0.2) !important;
     }
     //Uppercase button
     &.upper-button {
@@ -117,60 +119,6 @@ TABLE OF CONTENTS
             &.is-submit {
                 &:hover {
                     transform: translateY(-10px);
-                }
-            }
-        }
-    }
-    //Secondary Krypton button
-    &.k-secondary {
-        color: $white;
-        //Gradient modifier
-        &.has-gradient {
-            position: relative;
-            transition: all .6s ease-out !important;
-            border: none !important;
-            @include secondary-gradient-right();
-            opacity: 1;
-            z-index: 0;
-            .text {
-                position: relative;
-                display: block;
-                z-index: 3;
-                opacity: 1 !important;
-            }
-            //Hover state
-            &:hover {
-                .front-gradient {
-                    opacity: 0;
-                }
-            }
-            //Gradient front element
-            .front-gradient {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                border-radius: 3px;
-                @include secondary-gradient-left();
-                opacity: 1;
-                transition: all .6s ease-out !important;
-                z-index: 1;
-            }
-            //Rounded modifier
-            &.rounded {
-                .front-gradient {
-                    border-radius: 1000px;
-                }
-            }
-            //Raised modifier
-            &.raised {
-                &:hover {
-                    box-shadow: $secondary-box-shadow !important;
-                    opacity: 0.95;
                 }
             }
         }

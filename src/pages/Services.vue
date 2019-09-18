@@ -22,65 +22,73 @@
             class="subtitle is-6 is-light has-text-centered is-compact">
           {{ paragraph }}
         </h4>
+        <br/>
+        <br/>
 
-        <!-- Content wrapper -->
-        <div class="content-wrapper is-large">
-
-          <!-- Flying tabs wrapper -->
-          <div class="flying-wrapper">
-            <!-- Tabs container -->
-            <div class="flying-tabs-container">
-              <!-- Tabs -->
-              <div class="flying-tabs">
-
-                <div v-for="(item, index) in services"
-                     :key="index"
-                     class="flying-child"
-                     :class="selectedServiceIndex === index ? 'is-active' : ''">
-                  <a @click="choseService(index)">{{ item.title }}</a>
+        <!-- Services list + service selected-->
+        <div class="columns is-multiline is-vcentered is-centered">
+          <!-- Team member -->
+          <div v-for="(item, index) in services"
+               :key="index"
+               @click="choseService(index)"
+               class="column is-4">
+            <div class="team-member-container hover-card">
+              <!-- Card -->
+              <div class="dark-card" style="background-color: ">
+                <!-- Avatar wrapper -->
+                <div class="avatar">
+                  <img :src="require(`@/assets/images/logos/logoClair.png`)"
+                       :alt="item.title">
+                </div>
+                <!-- Member meta -->
+                <div class="member-info">
+                  <h4 class="title is-light is-6 is-tight">
+                    {{ item.title }}
+                  </h4>
                 </div>
               </div>
-            </div>
-
-            <!-- Tabs content wrapper -->
-            <div class="flying-tabs-content">
-
-              <div class="tab-content is-active" >
-                <div class="columns is-vcentered tab-content-wrapper">
-                  <!-- Tab content -->
-                  <div class="column is-5 is-offset-1">
-                    <div class="text-content">
-                      <p class="title is-6 is-light animated preFadeInUp fadeInUp">
-                        {{ selectedService.description}}
-                      </p>
-                    </div>
-                  </div>
-                  <div class="column is-5 is-offset-1">
-                    <div class="text-content">
-                      <h4 class="title is-6 is-light animated preFadeInUp fadeInUp">
-                        {{ selectedService.objectives }}
-                      </h4>
-                      <ul class="custom-bullet-list">
-                        <li class="animated preFadeInUp fadeInUp">
-                          <span>Mots clés</span>
-                          <br>
-                          <span class="item-content">{{ selectedService.keywords }}</span>
-                        </li>
-                        <li class="animated preFadeInUp fadeInUp">
-                          <span>Exemples d'étude proposée</span>
-                          <br>
-                          <span class="item-content">{{ selectedService.projects }}</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
-
         </div>
+
+        <!-- Modal service selected -->
+        <div :class="{'is-active' : showModal}"
+             class="modal modal-services">
+          <div @click="showModal = false"
+               class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <h4 class="title is-light">
+                {{ selectedService.title }}
+              </h4>
+            </header>
+
+            <section class="modal-card-body">
+              <div class="text-content">
+                <h4 class="title is-6 is-light animated preFadeInUp fadeInUp">
+                  {{ selectedService.objectives }}
+                </h4>
+                <ul class="custom-bullet-list">
+                  <li class="animated preFadeInUp fadeInUp">
+                    <span>Mots clés</span>
+                    <br>
+                    <span class="item-content">
+                      {{ selectedService.keywords }}
+                    </span>
+                  </li>
+                  <li class="animated preFadeInUp fadeInUp">
+                    <span>Exemples d'étude proposée</span>
+                    <br>
+                    <span class="item-content">
+                      {{ selectedService.projects }}
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+
         <!-- Content wrapper -->
       </div>
       <!-- /Container -->
@@ -109,6 +117,7 @@
 
         data() {
             return {
+                showModal: false,
                 services: this.$i18n.t('services').content,
                 selectedServiceIndex: 0,
                 selectedService: this.$i18n.t('services').content[0]
@@ -117,9 +126,25 @@
 
         methods: {
             choseService(index) {
+                console.log('choose', index);
+
                 this.selectedServiceIndex = index;
                 this.selectedService = this.services[this.selectedServiceIndex];
+
+                this.showModal = true;
+            },
+
+            closeModalOnEchap() {
+                document.addEventListener("keydown", (e) => {
+                    if(this.showModal && e.keyCode === 27) {
+                        this.showModal = false;
+                    }
+                });
             }
         },
+
+        mounted: function(){
+            this.closeModalOnEchap()
+        }
     }
 </script>

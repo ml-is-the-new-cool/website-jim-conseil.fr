@@ -3,11 +3,11 @@
   <div class="hero-head">
     <nav class="navbar is-light">
       <div class="container">
+
         <!-- Brand -->
         <div class="navbar-brand">
-          <router-link :to="$i18nRoute({ name: 'home' })"
-                       class="">
-            <img class="" :src="logoImage" alt="JIM">
+          <router-link :to="$i18nRoute({ name: 'home' })">
+            <img :src="logoImage" alt="JIM">
           </router-link>
           <!-- Responsive toggle -->
           <span @click.prevent="activateNavBar"
@@ -16,48 +16,49 @@
             <span></span>
             <span></span>
             <span></span>
-        </span>
+          </span>
         </div>
+        <!-- /Brand -->
+
         <!-- Menu -->
-        <div :class="{'is-active' : isNavBarActive}"
-             class="navbar-menu has-text-centered">
+        <div class="navbar-menu has-text-centered"
+             :class="{'is-active': isNavBarActive}">
+
           <div class="navbar-end">
             <!-- Menu item -->
-            <router-link :to="$i18nRoute({ name: 'home' })"
-                         exact
-                         class="is-centered-responsive">
-              <div class="navbar-item is-nav-link">
+            <div class="navbar-item is-nav-link">
+              <router-link :to="$i18nRoute({ name: 'home' })" exact
+                           class="is-centered-responsive">
                 {{ $t('links.pages.home') }}
-              </div>
-            </router-link>
+              </router-link>
+            </div>
 
             <!-- Menu item -->
-            <router-link :to="$i18nRoute({ name: 'services' })"
-                         exact
-                         class="is-centered-responsive">
-              <div class="navbar-item is-nav-link">
+            <div class="navbar-item is-nav-link">
+              <router-link :to="$i18nRoute({ name: 'services' })" exact
+                           class="is-centered-responsive">
                 {{ $t('links.pages.services') }}
-              </div>
-            </router-link>
+              </router-link>
+            </div>
 
             <!-- Menu item -->
-            <router-link :to="$i18nRoute({ name: 'about' })"
-                         class="is-centered-responsive">
-              <div class="navbar-item is-nav-link">
+            <div class="navbar-item is-nav-link">
+              <router-link :to="$i18nRoute({ name: 'about' })" exact
+                           class="is-centered-responsive">
                 {{ $t('links.pages.about') }}
-              </div>
-            </router-link>
+              </router-link>
+            </div>
 
             <!-- Menu item -->
-            <a :href="'mailto:' + $t('links.mail')"
-               class="is-centered-responsive">
-              <div class="navbar-item is-nav-link">
+            <div class="navbar-item is-nav-link">
+              <a :href="'mailto:' + $t('links.mail')"
+                 class="is-centered-responsive">
                 {{ $t('links.pages.contact') }}
-              </div>
-            </a>
+              </a>
+            </div>
 
             <!-- Leaflet button -->
-            <div class="navbar-item">
+            <div class="navbar-item is-nav-button">
               <a href="./plaquette.pdf" target="_blank"
                  class="button k-button k-primary raised has-gradient slanted">
                 <span class="text">
@@ -67,7 +68,7 @@
               </a>
             </div>
             <!-- Membership button -->
-            <div class="navbar-item">
+            <div class="navbar-item is-nav-button">
               <a href="./adhesion.pdf" target="_blank"
                  class="button k-button k-primary raised has-gradient slanted">
                 <span class="text">
@@ -95,6 +96,7 @@
                 logoImage
             }
         },
+
         computed: {
             isNavBarVisible() {
                 return this.$store.state.isNavBarVisible;

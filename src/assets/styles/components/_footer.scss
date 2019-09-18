@@ -1,15 +1,6 @@
-/*! _footer.styles | Krypton | Kit 1 | CSS Ninja */
-
 /* ==========================================================================
 Footer styles
 ========================================================================== */
-
-/***
-TABLE OF CONTENTS
-=============================================================================
-0. Krypton footer
-=============================================================================
-***/
 
 /* ==========================================================================
 0. Krypton footer
@@ -24,9 +15,6 @@ TABLE OF CONTENTS
     //Footer logo
 
     .footer-logo {
-        img {
-            height: 75px;
-        }
         //Brand
         .brand-name {
             text-transform: uppercase;
@@ -75,7 +63,6 @@ TABLE OF CONTENTS
                     color: $white;
                     padding: 10px 0;
                     &:before {
-                        content: "";
                         position: absolute;
                         bottom: 0;
                         left: 0;

@@ -47,13 +47,12 @@
                       {{ member.name }}
                     </h4>
                     <div class="position">
+                      <br/>
                       {{ member.position }}
+                      <br/>
+                      <br/>
+                      <a :href="member.linkedin">Linkedin</a>
                     </div>
-                    <p class="description">
-                      <a :href="member.linkedin">
-                        Linkedin
-                      </a>
-                    </p>
                   </div>
                 </div>
               </div>

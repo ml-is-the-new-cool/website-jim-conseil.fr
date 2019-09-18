@@ -89,7 +89,7 @@
               <span class="front-gradient"></span>
             </a>
             <br/>
-            <a href="./adhesion.pdf" target="_blank"
+            <a href="./adhesion.odt" target="_blank"
                class="button k-button k-primary raised has-gradient is-fat is-bold">
                 <span class="text">
                   {{ $t('links.pages.membership') }}

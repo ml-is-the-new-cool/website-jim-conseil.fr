@@ -32,19 +32,19 @@
     "content": [
       {
         "title": "Membres permanents",
-        "count": 3
+        "number": 3
       },
       {
         "title": "Étudiants-ingénieurs",
-        "count": 650
+        "number": 650
       },
       {
         "title": "Enseignants-chercheurs",
-        "count": 84
+        "number": 84
       },
       {
         "title": "Pôles de recherche",
-        "count": 4
+        "number": 4
       }
     ]
   },

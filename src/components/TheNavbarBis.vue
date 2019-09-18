@@ -21,62 +21,62 @@
       <!-- Menu -->
       <div :class="{'is-active' : isNavBarBisActive}"
            class="navbar-menu has-text-centered">
+
         <div class="navbar-end">
-          <!-- Menu item -->
-          <router-link :to="$i18nRoute({ name: 'home' })"
-                       exact
-                       class="is-centered-responsive">
+            <!-- Menu item -->
             <div class="navbar-item is-nav-link">
-              {{ $t('links.pages.home') }}
+              <router-link :to="$i18nRoute({ name: 'home' })" exact
+                           class="is-centered-responsive">
+                {{ $t('links.pages.home') }}
+              </router-link>
             </div>
-          </router-link>
 
-          <!-- Menu item -->
-          <router-link :to="$i18nRoute({ name: 'services' })"
-                       exact
-                       class="is-centered-responsive">
+            <!-- Menu item -->
             <div class="navbar-item is-nav-link">
-              {{ $t('links.pages.services') }}
+              <router-link :to="$i18nRoute({ name: 'services' })" exact
+                           class="is-centered-responsive">
+                {{ $t('links.pages.services') }}
+              </router-link>
             </div>
-          </router-link>
 
-          <!-- Menu item -->
-          <router-link :to="$i18nRoute({ name: 'about' })"
-                       class="is-centered-responsive">
+            <!-- Menu item -->
             <div class="navbar-item is-nav-link">
-              {{ $t('links.pages.about') }}
+              <router-link :to="$i18nRoute({ name: 'about' })" exact
+                           class="is-centered-responsive">
+                {{ $t('links.pages.about') }}
+              </router-link>
             </div>
-          </router-link>
 
-          <!-- Menu item -->
-          <a :href="'mailto:' + $t('links.mail')"
-             class="is-centered-responsive">
+            <!-- Menu item -->
             <div class="navbar-item is-nav-link">
-              {{ $t('links.pages.contact') }}
+              <a :href="'mailto:' + $t('links.mail')"
+                 class="is-centered-responsive">
+                {{ $t('links.pages.contact') }}
+              </a>
             </div>
-          </a>
 
-          <!-- Leaflet button -->
-          <div class="navbar-item">
-            <a href="./plaquette.pdf" target="_blank"
-               class="button k-button k-primary raised has-gradient slanted">
+            <!-- Leaflet button -->
+            <div class="navbar-item is-nav-button">
+              <a href="./plaquette.pdf" target="_blank"
+                 class="button k-button k-primary raised has-gradient slanted">
                 <span class="text">
                   {{ $t('links.pages.leaflet') }}
                 </span>
-              <span class="front-gradient"></span>
-            </a>
-          </div>
-          <!-- Membership button -->
-          <div class="navbar-item">
-            <a href="./adhesion.pdf" target="_blank"
-               class="button k-button k-primary raised has-gradient slanted">
+                <span class="front-gradient"></span>
+              </a>
+            </div>
+            <!-- Membership button -->
+            <div class="navbar-item is-nav-button">
+              <a href="./adhesion.pdf" target="_blank"
+                 class="button k-button k-primary raised has-gradient slanted">
                 <span class="text">
                   {{ $t('links.pages.membership') }}
                 </span>
-              <span class="front-gradient"></span>
-            </a>
+                <span class="front-gradient"></span>
+              </a>
+            </div>
           </div>
-        </div>
+
       </div>
     </div>
   </nav>

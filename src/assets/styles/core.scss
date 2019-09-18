@@ -1,40 +1,22 @@
-/*! core.styles | Krypton | Kit 1 | CSS Ninja */
-
 /* ==========================================================================
 Kit 1 core
 ========================================================================== */
 
-/***
-TABLE OF CONTENTS
-=============================================================================
-0. CSS Imports
-=============================================================================
-***/
-
-/* ==========================================================================
-0. CSS Imports
-========================================================================== */
-
 @import "~bulma/sass/utilities/_all";
-
 $navbar-background-color: dark-blue !important;
 //$navbar-item: white !important;
 
 @import "~bulma";
 
-body {
-  font-family: 'Kollektif', sans-serif;
-}
-
 @import 'partials/theme-default';
-@import 'partials/colors';
-@import 'partials/layout';
-@import 'partials/features';
-@import 'partials/buttons';
-@import 'partials/team';
-@import 'partials/blog';
-@import 'partials/footer';
-@import 'partials/forms';
-@import 'partials/pageloader';
 @import 'partials/animations';
+@import 'partials/buttons';
+@import 'partials/layout';
 @import 'partials/responsive';
+
+@import 'components/footer';
+@import 'components/pageloader';
+
+@import 'pages/about';
+@import 'pages/services';
+@import 'pages/home';
