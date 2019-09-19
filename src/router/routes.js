@@ -55,5 +55,11 @@ export default [
     redirect() {
       return Trans.getUserSupportedLang()
     }
+  },
+  {
+    path: '*',
+    redirect() {
+      return Trans.getUserSupportedLang()
+    }
   }
 ]
