@@ -126,8 +126,6 @@
 
         methods: {
             choseService(index) {
-                console.log('choose', index);
-
                 this.selectedServiceIndex = index;
                 this.selectedService = this.services[this.selectedServiceIndex];
 
