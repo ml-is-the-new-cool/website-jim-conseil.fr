@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <the-page-loader></the-page-loader>
-    <router-view/>
+    <the-page-loader/>
     <the-footer/>
     <scroll-up :scroll-duration="1000" :scroll-y="250"/>
   </div>
