@@ -1,5 +1,5 @@
 import { Trans } from '@/plugins/Translation'
-import TheApp from '@/App.vue'
+import ThePageLoader from '@/components/ThePageLoader.vue'
 
 function load (component) {
   return () => import(/* webpackChunkName: "[request]" */`@/pages/${component}.vue`)
@@ -20,7 +20,7 @@ function deactivateNavbars(to, from, next) {
 export default [
   {
     path: '/:lang',
-    component: TheApp,
+    component: ThePageLoader,
     beforeEnter: Trans.routeMiddleware,
     //beforeRouteUpdate: deactivateNavbars,
     children: [

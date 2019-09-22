@@ -2,7 +2,7 @@
   <transition name="fade"
               :duration="1000"
               enter-active-class="pageloader is-theme infraloader is-active">
-      <router-view/>
+    <router-view/>
   </transition>
 </template>
 

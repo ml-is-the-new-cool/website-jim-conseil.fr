@@ -63,8 +63,9 @@
     height: 55px;
     width: 55px;
     position: fixed;
-    border: rgba(0, 0, 0, 0.658);
-    background-color: rgba(0, 0, 0, 0.658);
+    border: white;/*rgba(0, 0, 0, 0.658);*/
+    /*background-color: rgba(0, 0, 0, 0.658);*/
+    background-color: white;
     color: white;
     border-radius: 100px;
     right: 10px;
@@ -77,7 +78,7 @@
     display: block;
     width: 10px;
     height: 25px;
-    border: 2px solid white;
+    border: 2px solid #1b2040;
     border-radius: 10px;
     margin: 0 auto;
   }
@@ -86,7 +87,7 @@
     display: block;
     width: 0;
     height: 10px;
-    border: 1px solid white;
+    border: 1px solid #1b2040;
     border-radius: 10px;
     left: 49%;
     position: absolute;
