@@ -18,10 +18,10 @@
         <h2 class="title is-light is-semibold has-text-centered is-spaced">
           {{ $t('services.title') }}
         </h2>
-        <h4 v-for="(paragraph) in $t('services.description')"
+        <p v-for="(paragraph) in $t('services.description')"
             class="subtitle is-6 is-light has-text-centered is-compact">
           {{ paragraph }}
-        </h4>
+        </p>
         <br/>
         <br/>
 
@@ -34,10 +34,10 @@
                class="column is-4">
             <div class="team-member-container hover-card">
               <!-- Card -->
-              <div class="dark-card" style="background-color: ">
+              <div class="dark-card">
                 <!-- Avatar wrapper -->
                 <div class="avatar">
-                  <img :src="require(`@/assets/images/logos/logoClair.png`)"
+                  <img :src="require(`@/assets/images/icons/${item.image}`)"
                        :alt="item.title">
                 </div>
                 <!-- Member meta -->

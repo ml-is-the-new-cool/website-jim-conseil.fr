@@ -135,6 +135,8 @@
             return {
                 title: this.$i18n.t('links.pages.about'),
             }
-        }
+        },
+
+        
     }
 </script>

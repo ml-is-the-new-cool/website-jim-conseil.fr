@@ -10,7 +10,9 @@ const state = {
   isNavBarActive: false,
 
   isNavBarBisVisible: false,
-  isNavBarBisActive: false
+  isNavBarBisActive: false,
+
+  isLoading: true
 };
 
 // mutations are operations that actually mutates the state.
@@ -33,6 +35,10 @@ const mutations = {
 
   showNavBarBis(state, visible) {
     state.isNavBarBisVisible = visible;
+  },
+
+  changeLoadingStatus(state, status) {
+    state.isLoading = status;
   }
 };
 

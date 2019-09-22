@@ -1,15 +1,14 @@
 <template>
   <div id="app">
-    <the-page-loader/>
-    <the-content/>
+    <the-page-loader></the-page-loader>
+    <router-view/>
     <the-footer/>
-    <scroll-up :scroll-duration="1000" :scroll-y="250"></scroll-up>
+    <scroll-up :scroll-duration="1000" :scroll-y="250"/>
   </div>
 </template>
 
 <script>
     import ThePageLoader from './components/ThePageLoader.vue';
-    import TheContent from './components/TheContent.vue';
     import TheFooter from './components/TheFooter.vue';
     import ScrollUp from './components/TheScrollUp.vue';
 
@@ -18,7 +17,6 @@
 
         components: {
             ThePageLoader,
-            TheContent,
             TheFooter,
             ScrollUp
         },

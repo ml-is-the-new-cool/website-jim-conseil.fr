@@ -74,7 +74,7 @@
       {
         "step": 3,
         "title": "Phase terrain",
-        "content": "Tout au long du projet, l’équipe projet et un responsable stratégique vous accompagne afin de maintenir vos objectifs au centre de nos réalisations. Nous choisissons avec vous des résultats intermédiaires pour valider chaque phase avant de commencer la suivante."
+        "content": "Tout au long du projet, l’équipe projet et un responsable stratégique vous accompagne afin de maintenir vos objectifs au centre de nos réalisations. Nous définissons avec vous des résultats intermédiaires à valider avant de poursuivre la phase suivante."
       },
       {
         "step": 4,
@@ -127,54 +127,97 @@
         "description": "Les élèves ingénieurs en génie logiciel ainsi que ceux en intelligence artificielle et apprentissage automatique vous garantissent des résultats à la hauteur de vos attentes en utilisant des outils reconnus - SQL, Python, Talent. Nous étudions l'algèbre relationnelle tout au long de nos études : vous utilisez déjà un autre outil ? Nous nous adaptons.",
         "objectives": "Améliorer la qualité de vos données afin d'augmenter votre efficacité en matière de prise de décision, de votre gestion relation client ou encore de votre maîtrise du risque.",
         "projects": "Optimiser la distribution d'un produit commercial.",
-        "keywords": "Intelligence artificielle, Big Data, Intégration des données, Génie logiciel."
+        "keywords": "Intelligence artificielle, Big Data, Intégration des données, Génie logiciel.",
+        "image": "data.svg"
       },
       {
         "title": "Langage naturel",
         "description": "Nous créons pour vous les outils les plus pertinents : traduction automatique ciblée, reconnaissance d’entités, synthèse automatique de texte, reconnaissance automatique de la parole, etc.",
         "objectives": "Réduire votre temps de traitement d’une information relevant du langage naturel.",
         "projects": "Chatbox, voicebox, Traduction ciblée, Proposition automatique de catégories, Ontolongie pour un hôpital",
-        "keywords": "Intelligence artificielle, traduction automatique, synthèse automatique de texte, reconnaissance automatique de la parole."
+        "keywords": "Intelligence artificielle, traduction automatique, synthèse automatique de texte, reconnaissance automatique de la parole.",
+        "image": "nlp.svg"
       },
       {
         "title": "Réseaux et sécurité",
         "description": "Les élèves ingénieurs en sécurité informatique suivent un parcours labellisé SecNumedu délivré par l’ANSSI qui vous garantissent la fiabilité de vos services.",
         "objectives": "Accroître votre confiance en vos infrastructures et logiciels.",
         "projects": "Installation d’un proxy, développement d’une architecture JEE, Tests d'intrusion, Sécurisation d'un serveur ou d'un logiciel, Preuves de programme, Failles, méthodologie de tests",
-        "keywords": "Sécurité réseau, architecture JEE, failles informatiques, preuves de programme, méthodologie de tests, tests d’intrusion."
+        "keywords": "Sécurité réseau, architecture JEE, failles informatiques, preuves de programme, méthodologie de tests, tests d’intrusion.",
+        "image": "network.svg"
       },
       {
         "title": "Applications & logiciels",
         "description": "Vous avez une idée, un concept, un process à développer ? Parlons-en ensemble, nous vous proposons tout type de solution technique : module pour un logiciel existant, architecture orientée données (Cloud, SOA, Business process), conception et réalisation d'applications, exploiter les données hétérogènes et multi-sources. Big Data, XML, NoSQL. Optimisation & implémentation d'un algorithme connu, Parallélisation d'un algorithme. Algorithme à performances garanties.",
         "objectives": "Concrétisez vos idées & concepts par une solution informatique.",
         "projects": "Logiciel de gestion interne à votre entreprise, Logiciel commercial, Module pour votre logiciel déjà existant",
-        "keywords": "Développement, communication technique"
+        "keywords": "Développement, communication technique",
+        "image": "software.svg"
       },
       {
         "title": "Développement WEB",
         "description": "Création de site WEB aussi bien vitrine que commercial et aide pour le référencement sur les moteurs de recherche.",
         "objectives": "Permettre une meilleure visibilité pour votre entreprise ou votre association.",
         "projects": "Réalisation d'un site web responsive, Réalisation d'un site web sur le modèle applicatif (SPA), Publicité & référencement",
-        "keywords": "Visibilité, start-up, publicité"
+        "keywords": "Visibilité, start-up, publicité",
+        "image": "web.svg"
       },
       {
         "title": "Informatisation d'une association ou entreprise",
         "description": "Mises à jour, Installation & réinstallation de système d'exploitation. Gestion matérielle",
         "objectives": "TODO",
         "projects": "TODO",
-        "keywords": "TODO"
+        "keywords": "TODO",
+        "image": "automation.svg"
       },
       {
         "title": "Modélisation & animation 3D",
         "description": "Nous étudions les méthodes d'analyses existantes et proposons nos propres solutions en fonction de vos besoins afin d'obtenir les resultats que vous attendez.",
         "objectives": "Appliquer des algorithmes et des calculs sur des maillages 3D afin d'extraire des informations pertinentes ou améliorer la structure du maillage pour optimiser les résultats. Créer des maillages 3D de toute pièce ou non, selon la demande éffectuée, ou animer ces derniers.",
         "projects": "Segmentation de maillage, Calcul de distance géodésique, Analyse de courbure, Décimation, Retriangulisation, Voxelisation d'un maillage, Modélisation d'une forme 3D sous forme de maillage, Animation d'un maillage, Génération automatique de forme 3D ...",
-        "keywords": "Maillage, 3D, OpenMesh, Algorithme"
+        "keywords": "Maillage, 3D, OpenMesh, Algorithme",
+        "image": "3d.svg"
       }
     ]
   },
 
-  "notfound":{
+  "legals": {
+    "title": "Informations légales",
+    "description": "Junior Informatique Marseille est une association loi 1901 à but non lucratif enregistrée au répertoire SIRENE sous le numéro 851 985 846 00019 créée le 18/05/2019.",
+
+    "webhost": {
+      "title": "Hébergeur",
+      "content": [
+        "ONLINE SAS",
+        "RCS PARIS B 433 115 904",
+        "Numéro TVA: FR 35 433 115 904",
+        "Siège social: ONLINE SAS BP 438 75366 PARIS CEDEX 08",
+        "Site web: https://www.online.net"
+      ]
+    },
+
+    "data_policy": {
+      "title": "Confidentialité des données",
+      "content": "Junior Informatique marseille n’enregistre pas d’informations personnelles permettant l’identification, à l’exception des formulaires que l’utilisateur est libre de remplir. Ces informations ne seront pas utilisées sans votre accord, nous les utiliserons seulement pour vous adresser des courriers, des brochures, des devis ou vous contacter. Les informations recueillies sur les sites bénéficient de la protection de la loi « Informatique et Libertés » n° 78-17 du 06 janvier 1978. Elles bénéficient d’un droit d’accès, de rectification, d’opposition à communication et de suppression sur simple demande."
+    },
+
+    "address": {
+      "title": "Par voie postale : ",
+      "content": [
+        "JUNIOR INFORMATIQUE MARSEILLE",
+        "UFR Sciences",
+        "163, avenue de Luminy ",
+        "13009 Marseille 9"
+      ]
+    },
+
+    "mail": {
+      "title": "Par courriel",
+      "content": "contact@jim-conseil.fr"
+    }
+  },
+
+  "notfound": {
     "title": "<Page inconnue/>",
     "text": ""
   }
