@@ -47,7 +47,8 @@
         </div>
 
         <div class="column is-4">
-          <p v-for="(paragraph) in $t('links.address')">
+          <p v-for="(paragraph, index) in $t('links.address')"
+             v-bind:key="index">
             {{ paragraph }}
           </p>
           <br/>
