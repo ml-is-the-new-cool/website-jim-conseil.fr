@@ -1,5 +1,5 @@
 <template>
-  <footer class="krypton-footer">
+  <footer class="custom-footer">
     <div class="container">
       <!-- Logo -->
       <div class="footer-logo">
@@ -10,36 +10,30 @@
       <!-- Columns -->
       <div class="columns footer-columns is-vcentered">
         <div class="column is-4">
-          <!-- Links group -->
+          <!-- Nav links group -->
           <ul class="footer-links">
             <li>
-              <router-link :to="$i18nRoute({ name: 'home' })"
-                           class="is-centered-responsive">
+              <router-link :to="$i18nRoute({ name: 'home' })">
                 {{ $t('links.pages.home') }}
               </router-link>
             </li>
             <li>
-              <router-link :to="$i18nRoute({ name: 'services' })"
-                           class="is-centered-responsive">
+              <router-link :to="$i18nRoute({ name: 'services' })">
                 {{ $t('links.pages.services') }}
               </router-link>
             </li>
             <li>
-              <router-link :to="$i18nRoute({ name: 'about' })"
-                           class="is-centered-responsive">
+              <router-link :to="$i18nRoute({ name: 'about' })">
                 {{ $t('links.pages.about') }}
               </router-link>
             </li>
             <li>
-              <a :href="'mailto:' + $t('links.mail')"
-                 class="is-centered-responsive">
+              <a :href="'mailto:' + $t('links.mail') + '?subject=[website] Prise de contact'">
                 {{ $t('links.pages.contact') }}
               </a>
             </li>
-            <br/>
             <li>
-              <router-link :to="$i18nRoute({ name: 'legals' })"
-                           class="is-centered-responsive">
+              <router-link :to="$i18nRoute({ name: 'legals' })">
                 {{ $t('links.pages.legals') }}
               </router-link>
             </li>
@@ -53,14 +47,12 @@
           </p>
           <br/>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.958302723137!2d5.4368435157849575!3d43.23133387913804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9b90075c160ef%3A0xdbf867e33fcc86a0!2s163%20Avenue%20de%20Luminy%2C%2013009%20Marseille!5e0!3m2!1sfr!2sfr!4v1567862380822!5m2!1sfr!2sfr"
-                  width="800" height="600"
-                  frameborder="0" style="border:0;"
-                  allowfullscreen title="GoogleMaps"
+                  width="800" height="800" allowfullscreen title="GoogleMaps"
                   rel=dns-prefetch>
           </iframe>
         </div>
 
-        <!-- Links group -->
+        <!-- Social media links group -->
         <div class="column is-4">
           <ul class="footer-links">
             <li>
@@ -81,34 +73,35 @@
                 SIREN : {{ $t('links.siren') }}
               </a>
             </li>
-            <br/>
-            <a href="./../plaquette.pdf" target="_blank"
-               class="button k-button k-primary raised has-gradient is-fat is-bold">
+            <li>
+              <a href="./../plaquette.pdf" target="_blank"
+                 class="button k-button k-primary has-gradient is-fat">
                 <span class="text">
                   {{ $t('links.pages.leaflet') }}
                 </span>
-              <span class="front-gradient"></span>
-            </a>
-            <br/>
-            <a href="./../lettreRecrutement.pdf" target="_blank"
-               class="button k-button k-primary raised has-gradient is-fat is-bold">
+                <span class="front-gradient"></span>
+              </a>
+            </li>
+            <li>
+              <a href="./../adhesion.odt" target="_blank"
+                 class="button k-button k-primary has-gradient is-fat">
                 <span class="text">
                   {{ $t('links.pages.membership') }}
                 </span>
-              <span class="front-gradient"></span>
-            </a>
+                <span class="front-gradient"></span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <!-- Copyright -->
-      <p class="k-copyright">{{ $t('links.copyrights') }}</p>
-      <br>
+      <p class="copyright">{{ $t('links.copyrights') }}</p>
     </div>
   </footer>
 </template>
 
 <script>
-  export default {
-      name: 'the-footer'
-  }
+    export default {
+        name: 'the-footer'
+    }
 </script>

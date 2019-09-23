@@ -6,18 +6,16 @@ Footer styles
 0. Krypton footer
 ========================================================================== */
 
-.krypton-footer {
-    padding: 40px 40px;
+.custom-footer {
+    padding: 20px 20px;
     background: $primary;
     text-align: center;
-    position: relative;
-    // border-top: $secondary;
-    //Footer logo
+    text-transform: uppercase;
+    //position: relative;
 
     .footer-logo {
         //Brand
         .brand-name {
-            text-transform: uppercase;
             font-weight: 600;
             color: $white;
             padding: 5px 0;
@@ -26,7 +24,6 @@ Footer styles
         }
         //Motto
         .brand-subtitle {
-            text-transform: uppercase;
             letter-spacing: 2px;
             font-size: 0.8rem;
             color: $secondary;
@@ -44,6 +41,7 @@ Footer styles
             color: $white;
             position: relative;
             text-transform: uppercase;
+            padding-bottom: 5px;
         }
 
         //Navigation links
@@ -55,6 +53,7 @@ Footer styles
 
             //Link element
             li {
+                padding-bottom: 5px;
                 a {
                     position: relative;
                     text-transform: uppercase;
@@ -98,7 +97,7 @@ Footer styles
         }
     }
     //Copyright section
-    .k-copyright {
+    .copyright {
         position: relative;
         color: $secondary;
         font-size: .85rem;
