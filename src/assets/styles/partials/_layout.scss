@@ -90,6 +90,7 @@ body {
             //Nav link modifier
             &.is-nav-link {
                 a {
+                    display: block;
                     //font-family: 'Cabin', sans-serif;
                     text-transform: uppercase;
                     font-size: .75rem;
