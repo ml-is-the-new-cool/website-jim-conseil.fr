@@ -83,7 +83,7 @@
               </a>
             </li>
             <li>
-              <a href="./../adhesion.odt" target="_blank"
+              <a href="./../lettreRecrutement.pdf" target="_blank"
                  class="button k-button k-primary has-gradient is-fat">
                 <span class="text">
                   {{ $t('links.pages.membership') }}
