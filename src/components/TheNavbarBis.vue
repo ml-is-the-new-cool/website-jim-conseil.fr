@@ -67,7 +67,7 @@
             </div>
             <!-- Membership button -->
             <div class="navbar-item is-nav-button">
-              <a href="./../adhesion.odt" target="_blank"
+              <a href="./../adhesion.pdf" target="_blank"
                  class="button k-button k-primary raised has-gradient slanted">
                 <span class="text">
                   {{ $t('links.pages.membership') }}

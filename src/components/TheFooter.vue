@@ -74,7 +74,7 @@
               </a>
             </li>
             <li>
-              <a href="./../plaquette.pdf" target="_blank"
+              <a href="./../adhesion.pdf" target="_blank"
                  class="button k-button k-primary has-gradient is-fat">
                 <span class="text">
                   {{ $t('links.pages.leaflet') }}
